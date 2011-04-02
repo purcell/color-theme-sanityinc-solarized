@@ -43,7 +43,7 @@
 (require 'color-theme)
 
 
-
+;;;###autoload
 (defun color-theme-sanityinc-solarized (mode)
   (interactive "Sdark or light")
   (let* ((base03  "#002b36")
@@ -161,10 +161,12 @@
          (highlight-80+ ((t (:background ,alt-background))))
          )))))
 
+;;;###autoload
 (defun color-theme-sanityinc-solarized-dark ()
   (interactive)
   (color-theme-sanityinc-solarized 'dark))
 
+;;;###autoload
 (defun color-theme-sanityinc-solarized-light ()
   (interactive)
   (color-theme-sanityinc-solarized 'light))
