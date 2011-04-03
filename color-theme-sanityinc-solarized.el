@@ -63,25 +63,25 @@
          (cyan    "#2aa198")
          (green   "#859900"))
     (when (and (eq system-type 'darwin) (eq 'ns window-system))
-      (message "tweaking solarized for broken gamma on this emacs")
-      ;; Color patching from akrito on github, compensating for Cocoa Emacs' bad gamma
-      ;; See https://github.com/akrito/solarized/commit/eeef256353be20ac26b5aff6db8b9ab4f91d30d1
-      (setq base03  "#002028"
-            base02  "#122932"
-            base01  "#495a64"
-            base00  "#566770"
-            base0   "#748284"
-            base1   "#849090"
-            base2   "#e9e2cd"
-            base3   "#fbf3e0"
-            yellow  "#a07600"
-            orange  "#ac4223"
-            red     "#bc3332"
-            magenta "#b23873"
-            violet  "#5662b5"
-            blue    "#337ac4"
-            cyan    "#438d84"
-            green   "#798400"))
+      ;; Colors patched by using OS X ColorSync Utility to convert
+      ;; from sRGB to colors in the Generic RGB which Emacs implicitly uses
+      (setq base03  "#042028" ; (0.0159 0.1265 0.1597)
+            base02  "#0a2832" ; (0.0394 0.1601 0.1983)
+            base01  "#465a61" ; (0.2767 0.3567 0.3830)
+            base00  "#52676f" ; (0.3244 0.4072 0.4385)
+            base0   "#708183" ; (0.4406 0.5096 0.5169)
+            base1   "#81908f" ; (0.5060 0.5649 0.5636)
+            base2   "#e9e2cb" ; (0.9161 0.8900 0.7978)
+            base3   "#fcf4dc" ; (0.9894 0.9579 0.8641)
+            yellow  "#a57705" ; (0.6475 0.4675 0.0235)
+            orange  "#bd3612" ; (0.7418 0.2133 0.0735)
+            red     "#c60007" ; (0.7770 0.0000 0.0290)
+            magenta "#c61b6e" ; (0.7774 0.1080 0.4352)
+            violet  "#5859b7" ; (0.3479 0.3514 0.7179)
+            blue    "#2075c7" ; (0.1275 0.4627 0.7823)
+            cyan    "#259185" ; (0.1468 0.5708 0.5250)
+            green   "#728a05" ; (0.4498 0.5412 0.0202)
+            ))
     (let ((foregrounds (list base1 base0 base00 base01))
           (backgrounds (list base03 base02))
           (contrast-backgrounds (list base3 base2)))
