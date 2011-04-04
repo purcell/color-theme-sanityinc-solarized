@@ -155,6 +155,9 @@
          (diff-added ((t (:foreground ,green))))
          (diff-changed ((t (:foreground ,violet))))
          (diff-removed ((t (:foreground ,orange))))
+         (diff-header ((t (:foreground ,cyan :background nil))))
+         (diff-file-header ((t (:foreground ,blue :background nil))))
+         (diff-hunk-header ((t (:foreground ,magenta))))
 
          ;; Magit (a patch is pending in magit to make these standard upstream)
          (magit-item-highlight ((t (:inherit highlight :background nil))))
