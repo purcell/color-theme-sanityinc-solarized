@@ -131,7 +131,7 @@
          (fringe ((t (:background ,alt-background))))
          (border ((t (:background ,alt-background))))
          (border-glyph ((t (nil))))
-         (highlight ((t (:background ,contrast-background))))
+         (highlight ((t (:inverse-video t))))
          (gui-element ((t (:background ,alt-background :foreground ,normal))))
          (mode-line ((t (:foreground ,faintest :background ,alt-background :bold t
                                      :box (:line-width 1)))))
