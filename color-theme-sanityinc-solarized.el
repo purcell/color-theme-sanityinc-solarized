@@ -128,7 +128,7 @@
          (fringe ((t (:background ,alt-background))))
          (border ((t (:background ,alt-background))))
          (border-glyph ((t (nil))))
-         (highlight ((t (:background ,contrast-backgrounds))))
+         (highlight ((t (:background ,contrast-background))))
          (gui-element ((t (:background ,alt-background :foreground ,normal))))
          (mode-line ((t (:foreground ,faintest :background ,alt-background :bold t
                                      :box (:line-width 1)))))
@@ -138,7 +138,7 @@
                                            :background ,background :bold nil
                                            :box (:line-width 1)))))
          (minibuffer-prompt ((t (:foreground ,blue))))
-         (region ((t (:background ,contrast-backgrounds))))
+         (region ((t (:background ,contrast-background))))
          (secondary-selection ((t (:background ,alt-background))))
 
          (header-line ((t (:background nil :foreground ,strong :inherit nil))))
