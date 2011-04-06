@@ -119,8 +119,9 @@
          (mmm-output-submode-face ((t (:background ,alt-background))))
 
          ;; Search
-         (isearch ((t (:foreground ,background :background ,green))))
-         (isearch-lazy-highlight-face ((t (:foreground ,normal :background ,yellow))))
+         (match ((t (:foreground ,blue :background nil :inverse-video t))))
+         (isearch ((t (:foreground ,orange :background nil :inverse-video t))))
+         (isearch-lazy-highlight-face ((t (:foreground nil :background nil :inherit match))))
 
          ;; IDO
          (ido-subdir ((t (:foreground ,magenta))))
