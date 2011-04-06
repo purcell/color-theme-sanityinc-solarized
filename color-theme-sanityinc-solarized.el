@@ -133,13 +133,15 @@
          (border-glyph ((t (nil))))
          (highlight ((t (:inverse-video nil :background ,alt-background))))
          (gui-element ((t (:background ,alt-background :foreground ,normal))))
-         (mode-line ((t (:foreground ,faintest :background ,alt-background :bold t
-                                     :box (:line-width 1)))))
-         (mode-line-buffer-id ((t (:foreground nil :background nil :bold nil))))
+         (mode-line ((t (:foreground nil :background ,alt-background :bold t
+                                     :box (:line-width 1 :color ,normal)))))
+         (mode-line-buffer-id ((t (:foreground ,magenta :background nil))))
          (mode-line-inactive ((t (:inherit mode-line
-                                           :foreground ,faint
-                                           :background ,background :bold nil
-                                           :box (:line-width 1)))))
+                                           :foreground ,faintest
+                                           :background ,alt-background :weight normal
+                                           :box (:line-width 1 :color ,normal)))))
+         (mode-line-emphasis ((t (:foreground ,strong))))
+         (mode-line-highlight ((t (:foreground ,magenta :box nil :weight bold))))
          (minibuffer-prompt ((t (:foreground ,blue))))
          (region ((t (:background ,contrast-background))))
          (secondary-selection ((t (:background ,alt-background))))
