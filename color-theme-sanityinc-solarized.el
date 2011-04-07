@@ -120,8 +120,8 @@
 
          ;; Search
          (match ((t (:foreground ,blue :background nil :inverse-video t))))
-         (isearch ((t (:foreground ,orange :background nil :inverse-video t))))
-         (isearch-lazy-highlight-face ((t (:foreground nil :background nil :inherit match))))
+         (isearch ((t (:foreground ,yellow :background nil :inverse-video t))))
+         (isearch-lazy-highlight-face ((t (:foreground ,cyan :inverse-video t))))
 
          ;; IDO
          (ido-subdir ((t (:foreground ,magenta))))
