@@ -109,6 +109,9 @@
          (font-lock-warning-face ((t (:bold t :foreground ,red))))
          (shadow ((t (:foreground ,(fourth foregrounds)))))
 
+         ;; Python-specific overrides
+         (py-builtins-face ((t (:foreground ,violet))))
+
          ;; Flymake
          (flymake-warnline ((t (:underline ,orange :background ,background))))
          (flymake-errline ((t (:underline ,red :background ,background))))
