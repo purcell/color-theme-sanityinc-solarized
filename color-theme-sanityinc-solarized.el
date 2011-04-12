@@ -109,9 +109,6 @@
          (font-lock-warning-face ((t (:bold t :foreground ,red))))
          (shadow ((t (:foreground ,(fourth foregrounds)))))
 
-         ;; Python-specific overrides
-         (py-builtins-face ((t (:foreground ,violet))))
-
          ;; Flymake
          (flymake-warnline ((t (:underline ,orange :background ,background))))
          (flymake-errline ((t (:underline ,red :background ,background))))
@@ -191,6 +188,9 @@
 
          (hl-sexp-face ((t (:background ,alt-background))))
          (highlight-80+ ((t (:background ,alt-background))))
+
+         ;; Python-specific overrides
+         (py-builtins-face ((t (:foreground ,magenta :weight normal))))
 
          ;; Gnus
          (gnus-cite-1 ((t (:inherit outline-1 :foreground nil))))
