@@ -122,6 +122,7 @@
          (match ((t (:foreground ,blue :background nil :inverse-video t))))
          (isearch ((t (:foreground ,yellow :background nil :inverse-video t))))
          (isearch-lazy-highlight-face ((t (:foreground ,cyan :inverse-video t))))
+         (isearch-fail ((t (:background nil :inherit font-lock-warning-face :inverse-video t))))
 
          ;; IDO
          (ido-subdir ((t (:foreground ,magenta))))
@@ -148,6 +149,7 @@
          (secondary-selection ((t (:background ,alt-background))))
 
          (header-line ((t (:background nil :foreground ,strong :inherit nil))))
+         (trailing-whitespace ((t (:inherit font-lock-warning-face :foreground nil :background nil :inverse-video t))))
 
          ;; Parenthesis matching
          (show-paren-match ((t (:background nil :foreground nil :inverse-video t))))
