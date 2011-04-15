@@ -91,7 +91,7 @@
          (bold-italic ((t (:italic t :bold t))))
          (underline ((t (:underline t))))
          (italic ((t (:italic t))))
-         (font-lock-builtin-face ((t (:foreground ,green))))
+         (font-lock-builtin-face ((t (:foreground ,violet))))
          (font-lock-comment-delimiter-face ((t (:foreground ,faintest :slant italic))))
          (font-lock-comment-face ((t (:foreground ,faint :slant italic))))
          (font-lock-constant-face ((t (:foreground ,violet))))
@@ -112,6 +112,11 @@
          ;; Flymake
          (flymake-warnline ((t (:underline ,orange :background ,background))))
          (flymake-errline ((t (:underline ,red :background ,background))))
+
+         ;; Clojure errors
+         (clojure-test-failure-face ((t (:background nil :inherit flymake-warnline))))
+         (clojure-test-error-face ((t (:background nil :inherit flymake-errline))))
+         (clojure-test-success-face ((t (:background nil :foreground nil :underline ,green))))
 
          ;; MMM-mode
          (mmm-code-submode-face ((t (:background ,alt-background))))
@@ -192,7 +197,7 @@
          (highlight-80+ ((t (:background ,alt-background))))
 
          ;; Python-specific overrides
-         (py-builtins-face ((t (:foreground ,magenta :weight normal))))
+         (py-builtins-face ((t (:foreground ,orange :weight normal))))
 
          ;; Gnus
          (gnus-cite-1 ((t (:inherit outline-1 :foreground nil))))
