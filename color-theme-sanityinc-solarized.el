@@ -77,7 +77,7 @@
           (faintest (fourth foregrounds))
           (contrast-background (second contrast-backgrounds)))
       (color-theme-install
-       `(,(intern (concat "color-theme-sanityinc-solarized-" (symbol-name'light)))
+       `(,(intern (concat "color-theme-sanityinc-solarized-" (symbol-name mode)))
          ((background-color . ,background)
           (background-mode . light)
           (border-color . ,normal)
