@@ -160,6 +160,7 @@
          (show-paren-match ((t (:background nil :foreground nil :inverse-video t))))
          (show-paren-mismatch ((t (:background ,magenta :foreground ,background))))
 
+         (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
 
          (diff-added ((t (:foreground ,green))))
