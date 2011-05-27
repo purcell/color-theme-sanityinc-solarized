@@ -87,10 +87,10 @@
 
          ;; Standard font lock faces
          (default ((t (nil))))
-         (bold ((t (:bold t))))
-         (bold-italic ((t (:italic t :bold t))))
+         (bold ((t (:weight bold))))
+         (bold-italic ((t (:slant italic :weight bold))))
          (underline ((t (:underline t))))
-         (italic ((t (:italic t))))
+         (italic ((t (:slant italic))))
          (font-lock-builtin-face ((t (:foreground ,violet))))
          (font-lock-comment-delimiter-face ((t (:foreground ,faintest :slant italic))))
          (font-lock-comment-face ((t (:foreground ,faint :slant italic))))
@@ -98,7 +98,7 @@
          (font-lock-doc-face ((t (:foreground ,magenta))))
          (font-lock-doc-string-face ((t (:foreground ,yellow))))
          (font-lock-function-name-face ((t (:foreground ,blue))))
-         (font-lock-keyword-face ((t (:foreground ,green :bold t))))
+         (font-lock-keyword-face ((t (:foreground ,green :weight bold))))
          (font-lock-negation-char-face ((t (:foreground ,green))))
          (font-lock-preprocessor-face ((t (:foreground ,magenta))))
          (font-lock-regexp-grouping-backslash ((t (:foreground ,magenta))))
@@ -106,7 +106,7 @@
          (font-lock-string-face ((t (:foreground ,cyan))))
          (font-lock-type-face ((t (:foreground ,yellow))))
          (font-lock-variable-name-face ((t (:foreground ,yellow))))
-         (font-lock-warning-face ((t (:bold t :foreground ,red))))
+         (font-lock-warning-face ((t (:weight bold :foreground ,red))))
          (shadow ((t (:foreground ,(fourth foregrounds)))))
 
          ;; Flymake
@@ -140,7 +140,7 @@
          (border-glyph ((t (nil))))
          (highlight ((t (:inverse-video nil :background ,alt-background))))
          (gui-element ((t (:background ,alt-background :foreground ,normal))))
-         (mode-line ((t (:foreground nil :background ,alt-background :bold t
+         (mode-line ((t (:foreground nil :background ,alt-background :weight bold
                                      :box (:line-width 1 :color ,normal)))))
          (mode-line-buffer-id ((t (:foreground ,magenta :background nil))))
          (mode-line-inactive ((t (:inherit mode-line
@@ -156,9 +156,14 @@
          (header-line ((t (:background nil :foreground ,strong :inherit nil))))
          (trailing-whitespace ((t (:inherit font-lock-warning-face :foreground nil :background nil :inverse-video t))))
 
-         ;; Parenthesis matching
+         ;; Parenthesis matching (built-in)
          (show-paren-match ((t (:background nil :foreground nil :inverse-video t))))
          (show-paren-mismatch ((t (:background ,magenta :foreground ,background))))
+
+         ;; Parenthesis matching (mic-paren)
+         (paren-face-match ((t (:foreground nil :background nil :inherit show-paren-match))))
+         (paren-face-mismatch ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
+         (paren-face-no-match ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
 
          (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
@@ -190,7 +195,7 @@
 
          (org-document-title ((t (:foreground ,cyan))))
          (org-column ((t (:background ,alt-background))))
-         (org-warning ((t (:bold t :foreground ,red))))
+         (org-warning ((t (:weight bold :foreground ,red))))
 
          (org-scheduled-previously ((t (:foreground ,orange))))
 
@@ -210,9 +215,9 @@
          (gnus-cite-7 ((t (:inherit outline-7 :foreground nil))))
          (gnus-cite-8 ((t (:inherit outline-8 :foreground nil))))
          ;; there are several more -cite- faces...
-         (gnus-header-content ((t (:inherit header-line :foreground nil :background nil :bold nil))))
-         (gnus-header-subject ((t (:inherit gnus-header-content :bold t :foreground ,yellow))))
-         (gnus-header-from ((t (:inherit gnus-header-content :bold t :foreground ,orange))))
+         (gnus-header-content ((t (:inherit header-line :foreground nil :background nil :weight normal))))
+         (gnus-header-subject ((t (:inherit gnus-header-content :weight bold :foreground ,yellow))))
+         (gnus-header-from ((t (:inherit gnus-header-content :weight bold :foreground ,orange))))
          (gnus-header-name ((t (:inherit header-line :foreground ,green :background nil))))
          (gnus-button ((t (:inherit link :foreground nil))))
          (gnus-signature ((t (:inherit font-lock-comment-face))))
