@@ -124,10 +124,10 @@
          (mmm-output-submode-face ((t (:background ,alt-background))))
 
          ;; Search
-         (match ((t (:foreground ,blue :background nil :inverse-video t))))
-         (isearch ((t (:foreground ,yellow :background nil :inverse-video t))))
-         (isearch-lazy-highlight-face ((t (:foreground ,cyan :inverse-video t))))
-         (isearch-fail ((t (:background nil :inherit font-lock-warning-face :inverse-video t))))
+         (match ((t (:foreground ,blue :background ,background :inverse-video t))))
+         (isearch ((t (:foreground ,yellow :background ,background :inverse-video t))))
+         (isearch-lazy-highlight-face ((t (:foreground ,cyan :background ,background :inverse-video t))))
+         (isearch-fail ((t (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
          ;; IDO
          (ido-subdir ((t (:foreground ,magenta))))
