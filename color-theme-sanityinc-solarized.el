@@ -189,6 +189,8 @@
 
          (org-link ((t (:foreground ,blue :underline t))))
          (org-date ((t (:foreground ,blue :underline t))))
+         (org-agenda-structure ((t (:foreground ,magenta))))
+         (org-agenda-date ((t (:foreground ,blue :underline nil))))
          (org-done ((t (:foreground ,green))))
          (org-todo ((t (:foreground ,red))))
          (org-special-keyword ((t (:foreground ,orange))))
