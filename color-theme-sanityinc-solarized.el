@@ -183,6 +183,7 @@
 
          (link ((t (:foreground nil :underline t))))
          (widget-button ((t (:underline t))))
+         (widget-field ((t (:background ,alt-background :box (:line-width 1 :color ,normal)))))
 
          ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
          (outline-3 ((t (:inherit nil :foreground ,green))))
@@ -246,6 +247,9 @@
          (gnus-group-mail-4-empty ((t (:inherit gnus-group-mail-4 :foreground ,faint))))
          (gnus-group-mail-5-empty ((t (:inherit gnus-group-mail-5 :foreground ,faint))))
          (gnus-group-mail-6-empty ((t (:inherit gnus-group-mail-6 :foreground ,faint))))
+
+         (custom-variable-tag ((t (:foreground ,blue))))
+         (custom-group-tag ((t (:foreground ,blue))))
          )))))
 
 ;;;###autoload
