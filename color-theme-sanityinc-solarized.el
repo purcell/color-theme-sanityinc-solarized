@@ -175,6 +175,19 @@
          (diff-file-header ((t (:foreground ,blue :background nil))))
          (diff-hunk-header ((t (:foreground ,magenta))))
 
+         ;; dired+
+         (diredp-dir-heading ((t (:foreground nil :background nil :inherit heading))))
+         (diredp-dir-priv ((t (:foreground ,cyan :background nil))))
+         (diredp-exec-priv ((t (:foreground ,red :background nil))))
+         (diredp-file-name ((t (:foreground ,yellow))))
+         (diredp-file-suffix ((t (:foreground ,green))))
+         (diredp-flag-mark-line ((t (:background nil :inherit highlight))))
+         (diredp-no-priv ((t (:background nil))))
+         (diredp-number ((t (:foreground ,yellow))))
+         (diredp-read-priv ((t (:foreground ,green :background nil))))
+         (diredp-symlink ((t (:foreground ,blue))))
+         (diredp-write-priv ((t (:foreground ,orange :background nil))))
+
          ;; Magit (a patch is pending in magit to make these standard upstream)
          (magit-item-highlight ((t (:inherit highlight :background nil))))
          (magit-diff-add ((t (:inherit diff-added :foreground nil))))
