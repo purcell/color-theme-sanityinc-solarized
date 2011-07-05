@@ -249,6 +249,7 @@
          (gnus-summary-high-unread ((t (:foreground ,yellow :weight normal))))
          (gnus-summary-high-read ((t (:foreground ,green :weight normal))))
          (gnus-summary-high-ancient ((t (:foreground ,green :weight normal))))
+         (gnus-summary-cancelled ((t (:foreground ,red :background nil :weight normal))))
 
          (gnus-group-mail-low ((t (:foreground ,faintest))))
          (gnus-group-mail-low-empty ((t (:foreground ,faintest))))
