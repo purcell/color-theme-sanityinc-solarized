@@ -118,6 +118,15 @@
          (clojure-test-error-face ((t (:background nil :inherit flymake-errline))))
          (clojure-test-success-face ((t (:background nil :foreground nil :underline ,green))))
 
+         ;; For Brian Carper's extended clojure syntax table
+         (clojure-keyword ((t (:foreground ,yellow))))
+         (clojure-parens ((t (:foreground ,strong))))
+         (clojure-braces ((t (:foreground ,green))))
+         (clojure-brackets ((t (:foreground ,yellow))))
+         (clojure-double-quote ((t (:foreground ,cyan))))
+         (clojure-special ((t (:foreground ,blue))))
+         (clojure-java-call ((t (:foreground ,magenta))))
+
          ;; MMM-mode
          (mmm-code-submode-face ((t (:background ,alt-background))))
          (mmm-comment-submode-face ((t (:inherit font-lock-comment-face))))
