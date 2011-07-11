@@ -176,6 +176,9 @@
 
          (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
+         (slime-repl-input-face ((t (:weight bold))))
+         (slime-repl-prompt-face ((t (:underline t :weight bold))))
+         (slime-repl-output-face ((t (:background ,background))))
 
          (diff-added ((t (:foreground ,green))))
          (diff-changed ((t (:foreground ,violet))))
