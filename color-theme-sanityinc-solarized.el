@@ -209,6 +209,7 @@
          (magit-diff-add ((t (:inherit diff-added :foreground nil))))
          (magit-diff-changed ((t (:inherit diff-changed :foreground nil))))
          (magit-diff-del ((t (:inherit diff-removed :foreground nil))))
+         (magit-log-graph ((t (:foreground ,faintest))))
 
          (link ((t (:foreground nil :underline t))))
          (widget-button ((t (:underline t))))
