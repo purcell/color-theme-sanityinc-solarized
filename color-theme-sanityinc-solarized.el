@@ -238,6 +238,14 @@
          ;; Python-specific overrides
          (py-builtins-face ((t (:foreground ,orange :weight normal))))
 
+         ;; Message-mode
+         (message-header-other ((t (:inherit header-line :foreground nil :background nil :weight normal))))
+         (message-header-subject ((t (:inherit message-header-other :weight bold :foreground ,yellow))))
+         (message-header-to ((t (:inherit message-header-other :weight bold :foreground ,orange))))
+         (message-header-cc ((t (:inherit message-header-to :foreground nil))))
+         (message-header-name ((t (:inherit header-line :foreground ,green :background nil))))
+         (message-separator ((t (:foreground ,magenta))))
+
          ;; Gnus
          (gnus-cite-1 ((t (:inherit outline-1 :foreground nil))))
          (gnus-cite-2 ((t (:inherit outline-2 :foreground nil))))
@@ -257,6 +265,7 @@
 
          (gnus-summary-normal-unread ((t (:foreground ,strong :weight normal))))
          (gnus-summary-normal-read ((t (:foreground ,normal :weight normal))))
+         (gnus-summary-normal-ticked ((t (:foreground ,orange :weight normal))))
          (gnus-summary-low-unread ((t (:foreground ,faint :weight normal))))
          (gnus-summary-low-read ((t (:foreground ,faintest :weight normal))))
          (gnus-summary-high-unread ((t (:foreground ,yellow :weight normal))))
