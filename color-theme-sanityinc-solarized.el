@@ -232,6 +232,10 @@
 
          (org-scheduled-previously ((t (:foreground ,orange))))
 
+         (markdown-header-face ((t (:inherit header-line))))
+         (markdown-url-face ((t (:inherit link))))
+         (markdown-link-face ((t (:foreground ,blue :underline t))))
+
          (hl-sexp-face ((t (:background ,alt-background))))
          (highlight-80+ ((t (:background ,alt-background))))
 
@@ -244,7 +248,9 @@
          (message-header-to ((t (:inherit message-header-other :weight bold :foreground ,orange))))
          (message-header-cc ((t (:inherit message-header-to :foreground nil))))
          (message-header-name ((t (:inherit header-line :foreground ,green :background nil))))
+         (message-header-newsgroups ((t (:foreground ,cyan :background nil :slant normal))))
          (message-separator ((t (:foreground ,magenta))))
+
 
          ;; Gnus
          (gnus-cite-1 ((t (:inherit outline-1 :foreground nil))))
@@ -265,9 +271,11 @@
 
          (gnus-summary-normal-unread ((t (:foreground ,strong :weight normal))))
          (gnus-summary-normal-read ((t (:foreground ,normal :weight normal))))
+         (gnus-summary-normal-ancient ((t (:foreground ,cyan :weight normal))))
          (gnus-summary-normal-ticked ((t (:foreground ,orange :weight normal))))
          (gnus-summary-low-unread ((t (:foreground ,faint :weight normal))))
          (gnus-summary-low-read ((t (:foreground ,faintest :weight normal))))
+         (gnus-summary-low-ancient ((t (:foreground ,faintest :weight normal))))
          (gnus-summary-high-unread ((t (:foreground ,yellow :weight normal))))
          (gnus-summary-high-read ((t (:foreground ,green :weight normal))))
          (gnus-summary-high-ancient ((t (:foreground ,green :weight normal))))
