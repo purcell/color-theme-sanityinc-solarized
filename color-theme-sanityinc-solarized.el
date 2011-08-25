@@ -1,11 +1,12 @@
-;;; color-theme-sanityinc-solarized --- an alternate formulation of Ethan Schoonover's Solarized theme
+;;; color-theme-sanityinc-solarized.el --- A version of Ethan Schoonover's Solarized theme
 
 ;; Copyright (C) 2011 Steve Purcell
 
-;; Author: Steve Purcell <steve [at] sanityinc.com>
+;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: themes
 ;; X-URL: http://github.com/purcell/color-theme-sanityinc-solarized
 ;; URL: http://github.com/purcell/color-theme-sanityinc-solarized
+;; Version: 1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -25,10 +26,10 @@
 ;; Here are two slightly subdued color themes that are easy on the eyes
 ;; and cover a reasonably complete set of faces.
 ;;
-;;; Use:
+;; Use:
 ;;
-;; M-x color-theme-solarized-light
-;; M-x color-theme-solarized-dark
+;;   M-x color-theme-solarized-light
+;;   M-x color-theme-solarized-dark
 ;;
 ;;; Credit:
 ;;
@@ -315,3 +316,4 @@
 
 
 (provide 'color-theme-sanityinc-solarized)
+;;; color-theme-sanityinc-solarized.el ends here
