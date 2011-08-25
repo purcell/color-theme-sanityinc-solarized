@@ -108,6 +108,8 @@
          (font-lock-variable-name-face ((t (:foreground ,yellow))))
          (font-lock-warning-face ((t (:weight bold :foreground ,red))))
          (shadow ((t (:foreground ,(fourth foregrounds)))))
+         (success ((t (:foreground ,green))))
+         (error ((t (:foreground ,red))))
 
          ;; Flymake
          (flymake-warnline ((t (:underline ,orange :background ,background))))
