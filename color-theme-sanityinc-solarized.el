@@ -123,7 +123,7 @@
          (clojure-parens ((t (:foreground ,strong))))
          (clojure-braces ((t (:foreground ,green))))
          (clojure-brackets ((t (:foreground ,yellow))))
-         (clojure-double-quote ((t (:foreground ,cyan))))
+         (clojure-double-quote ((t (:foreground ,cyan :background nil))))
          (clojure-special ((t (:foreground ,blue))))
          (clojure-java-call ((t (:foreground ,magenta))))
 
