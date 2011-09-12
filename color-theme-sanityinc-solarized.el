@@ -258,6 +258,15 @@
          (nxml-delimited-data-face ((t (:foreground nil :inherit font-lock-string-face))))
          (rng-error-face ((t (:underline ,red))))
 
+	 ;; RHTML
+	 (erb-delim-face ((t (:background ,alt-background))))
+	 (erb-exec-face ((t (:background ,alt-background :weight bold))))
+	 (erb-exec-delim-face ((t (:background ,alt-background))))
+	 (erb-out-face ((t (:background ,alt-background :weight bold))))
+	 (erb-out-delim-face ((t (:background ,alt-background))))
+	 (erb-comment-face ((t (:background ,alt-background :weight bold :slant italic))))
+	 (erb-comment-delim-face ((t (:background ,alt-background))))
+
          ;; Message-mode
          (message-header-other ((t (:inherit header-line :foreground nil :background nil :weight normal))))
          (message-header-subject ((t (:inherit message-header-other :weight bold :foreground ,yellow))))
