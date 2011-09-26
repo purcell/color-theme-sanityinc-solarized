@@ -1,4 +1,4 @@
-;;; color-theme-sanityinc-solarized.el --- A version of Ethan Schoonover's Solarized theme
+;;; color-theme-sanityinc-solarized.el --- A version of Ethan Schoonover's Solarized themes
 
 ;; Copyright (C) 2011 Steve Purcell
 
@@ -6,7 +6,7 @@
 ;; Keywords: themes
 ;; X-URL: http://github.com/purcell/color-theme-sanityinc-solarized
 ;; URL: http://github.com/purcell/color-theme-sanityinc-solarized
-;; Version: 1.0
+;; Version: 1.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -244,6 +244,14 @@
 
          ;; Python-specific overrides
          (py-builtins-face ((t (:foreground ,orange :weight normal))))
+
+         ;; nxml
+         (nxml-name-face ((t (:foreground nil :inherit font-lock-constant-face))))
+         (nxml-attribute-local-name-face ((t (:foreground nil :inherit font-lock-variable-name-face))))
+         (nxml-ref-face ((t (:foreground nil :inherit font-lock-preprocessor-face))))
+         (nxml-delimiter-face ((t (:foreground nil :inherit font-lock-keyword-face))))
+         (nxml-delimited-data-face ((t (:foreground nil :inherit font-lock-string-face))))
+         (rng-error-face ((t (:underline ,red))))
 
          ;; Message-mode
          (message-header-other ((t (:inherit header-line :foreground nil :background nil :weight normal))))
