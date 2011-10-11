@@ -6,7 +6,7 @@
 ;; Keywords: themes
 ;; X-URL: http://github.com/purcell/color-theme-sanityinc-solarized
 ;; URL: http://github.com/purcell/color-theme-sanityinc-solarized
-;; Version: 1.1
+;; Version: DEV
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
