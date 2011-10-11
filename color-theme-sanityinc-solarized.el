@@ -178,6 +178,7 @@
          (paren-face-no-match ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
 
          (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
+         (sh-quoted-exec ((t (:foreground nil :inherit font-lock-preprocessor-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
          (slime-repl-input-face ((t (:weight bold))))
          (slime-repl-prompt-face ((t (:underline t :weight bold))))
