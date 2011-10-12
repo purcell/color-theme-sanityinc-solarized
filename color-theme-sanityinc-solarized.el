@@ -246,6 +246,10 @@
          ;; Python-specific overrides
          (py-builtins-face ((t (:foreground ,orange :weight normal))))
 
+         ;; js2-mode
+         (js2-warning ((t (:underline ,yellow))))
+         (js2-error ((t (:underline ,red))))
+
          ;; nxml
          (nxml-name-face ((t (:foreground nil :inherit font-lock-constant-face))))
          (nxml-attribute-local-name-face ((t (:foreground nil :inherit font-lock-variable-name-face))))
