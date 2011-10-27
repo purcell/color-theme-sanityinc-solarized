@@ -324,7 +324,12 @@
 
          (custom-variable-tag ((t (:foreground ,blue))))
          (custom-group-tag ((t (:foreground ,blue))))
-         )))))
+         ))
+
+      ;; ansi-color - comint and other modes that handle terminal color escape sequences
+      (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan background))
+      (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+      )))
 
 ;;;###autoload
 (defun color-theme-sanityinc-solarized-dark ()
