@@ -177,6 +177,9 @@
          (paren-face-mismatch ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
          (paren-face-no-match ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
 
+	 ;; Parenthesis dimming (parenface)
+	 (paren-face ((t (:foreground ,faintest :background nil))))
+
          (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
          (sh-quoted-exec ((t (:foreground nil :inherit font-lock-preprocessor-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
