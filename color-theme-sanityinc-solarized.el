@@ -194,6 +194,12 @@
          (diff-file-header ((t (:foreground ,blue :background nil))))
          (diff-hunk-header ((t (:foreground ,magenta))))
 
+	 ;; undo-tree
+	 (undo-tree-visualizer-default-face ((t (:foreground ,normal))))
+	 (undo-tree-visualizer-current-face ((t (:foreground ,green :weight bold))))
+	 (undo-tree-visualizer-active-branch-face ((t (:foreground ,red))))
+	 (undo-tree-visualizer-register-face ((t (:foreground ,yellow))))
+
          ;; dired+
          (diredp-dir-heading ((t (:foreground nil :background nil :inherit heading))))
          (diredp-dir-priv ((t (:foreground ,cyan :background nil))))
