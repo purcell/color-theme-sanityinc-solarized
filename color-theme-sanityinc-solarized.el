@@ -177,6 +177,9 @@
          (paren-face-mismatch ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
          (paren-face-no-match ((t (:foreground nil :background nil :inherit show-paren-mismatch))))
 
+	 ;; Parenthesis dimming (parenface)
+	 (paren-face ((t (:foreground ,faintest :background nil))))
+
          (sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
          (sh-quoted-exec ((t (:foreground nil :inherit font-lock-preprocessor-face))))
          (slime-highlight-edits-face ((t (:foreground ,strong))))
@@ -190,6 +193,12 @@
          (diff-header ((t (:foreground ,cyan :background nil))))
          (diff-file-header ((t (:foreground ,blue :background nil))))
          (diff-hunk-header ((t (:foreground ,magenta))))
+
+	 ;; undo-tree
+	 (undo-tree-visualizer-default-face ((t (:foreground ,normal))))
+	 (undo-tree-visualizer-current-face ((t (:foreground ,green :weight bold))))
+	 (undo-tree-visualizer-active-branch-face ((t (:foreground ,red))))
+	 (undo-tree-visualizer-register-face ((t (:foreground ,yellow))))
 
          ;; dired+
          (diredp-dir-heading ((t (:foreground nil :background nil :inherit heading))))
@@ -258,6 +267,15 @@
          (nxml-delimited-data-face ((t (:foreground nil :inherit font-lock-string-face))))
          (rng-error-face ((t (:underline ,red))))
 
+	 ;; RHTML
+	 (erb-delim-face ((t (:background ,alt-background))))
+	 (erb-exec-face ((t (:background ,alt-background :weight bold))))
+	 (erb-exec-delim-face ((t (:background ,alt-background))))
+	 (erb-out-face ((t (:background ,alt-background :weight bold))))
+	 (erb-out-delim-face ((t (:background ,alt-background))))
+	 (erb-comment-face ((t (:background ,alt-background :weight bold :slant italic))))
+	 (erb-comment-delim-face ((t (:background ,alt-background))))
+
          ;; Message-mode
          (message-header-other ((t (:inherit header-line :foreground nil :background nil :weight normal))))
          (message-header-subject ((t (:inherit message-header-other :weight bold :foreground ,yellow))))
@@ -315,7 +333,12 @@
 
          (custom-variable-tag ((t (:foreground ,blue))))
          (custom-group-tag ((t (:foreground ,blue))))
-         )))))
+         ))
+
+      ;; ansi-color - comint and other modes that handle terminal color escape sequences
+      (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan background))
+      (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+      )))
 
 ;;;###autoload
 (defun color-theme-sanityinc-solarized-dark ()
