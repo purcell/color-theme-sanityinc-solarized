@@ -362,7 +362,11 @@ are bound."
        (color-theme-sanityinc-solarized--with-colors
         ',mode
         (apply 'custom-theme-set-faces ',name
-               (color-theme-sanityinc-solarized--face-specs)))
+               (color-theme-sanityinc-solarized--face-specs))
+        (custom-theme-set-variables
+         ',name
+         `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,background))
+         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
 
