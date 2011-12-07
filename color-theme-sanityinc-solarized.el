@@ -170,7 +170,7 @@ names to which it refers are bound."
      (secondary-selection ((,class (:background ,alt-background))))
 
      (header-line ((,class (:background nil :foreground ,strong :inherit nil))))
-     (trailing-whitespace ((,class (:inherit font-lock-warning-face :foreground nil :background nil :inverse-video t))))
+     (trailing-whitespace ((,class (:background ,red :underline nil))))
 
      ;; Parenthesis matching (built-in)
      (show-paren-match ((,class (:background nil :foreground nil :inverse-video t))))
@@ -187,9 +187,10 @@ names to which it refers are bound."
      (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
      (sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
      (slime-highlight-edits-face ((,class (:foreground ,strong))))
-     (slime-repl-input-face ((,class (:weight bold))))
-     (slime-repl-prompt-face ((,class (:underline t :weight bold))))
-     (slime-repl-output-face ((,class (:background ,background))))
+     (slime-repl-input-face ((,class (:weight normal :underline nil))))
+     (slime-repl-prompt-face ((,class (:underline nil :weight bold :foreground ,magenta))))
+     (slime-repl-result-face ((,class (:foreground ,green))))
+     (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
      (diff-added ((,class (:foreground ,green))))
      (diff-changed ((,class (:foreground ,violet))))
@@ -231,6 +232,25 @@ names to which it refers are bound."
      (link ((,class (:foreground nil :underline t))))
      (widget-button ((,class (:underline t))))
      (widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,normal)))))
+
+     ;; compilation
+     (compilation-column-face ((,class (:foreground ,yellow))))
+     (compilation-enter-directory-face ((,class (:foreground ,green))))
+     (compilation-error-face ((,class (:foreground ,red :weight bold :underline t))))
+     (compilation-face ((,class (:foreground ,normal))))
+     (compilation-info-face ((,class (:foreground ,blue))))
+     (compilation-info ((,class (:foreground ,green :underline t))))
+     (compilation-leave-directory-face ((,class (:foreground ,green))))
+     (compilation-line-face ((,class (:foreground ,yellow))))
+     (compilation-line-number ((,class (:foreground ,yellow))))
+     (compilation-message-face ((,class (:foreground ,blue))))
+     (compilation-warning-face ((,class (:foreground ,yellow :weight bold :underline t))))
+
+     ;; Grep
+     (grep-context-face ((,class (:foreground ,faint))))
+     (grep-error-face ((,class (:foreground ,red :weight bold :underline t))))
+     (grep-hit-face ((,class (:foreground ,blue))))
+     (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
      (outline-3 ((,class (:inherit nil :foreground ,green))))
