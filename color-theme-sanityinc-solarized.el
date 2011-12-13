@@ -133,6 +133,18 @@ names to which it refers are bound."
      (clojure-special ((,class (:foreground ,blue))))
      (clojure-java-call ((,class (:foreground ,magenta))))
 
+     ;; Rainbow-delimiters
+     (rainbow-delimiters-depth-1-face ((,class (:foreground ,normal))))
+     (rainbow-delimiters-depth-2-face ((,class (:foreground ,cyan))))
+     (rainbow-delimiters-depth-3-face ((,class (:foreground ,yellow))))
+     (rainbow-delimiters-depth-4-face ((,class (:foreground ,green))))
+     (rainbow-delimiters-depth-5-face ((,class (:foreground ,blue))))
+     (rainbow-delimiters-depth-6-face ((,class (:foreground ,normal))))
+     (rainbow-delimiters-depth-7-face ((,class (:foreground ,cyan))))
+     (rainbow-delimiters-depth-8-face ((,class (:foreground ,yellow))))
+     (rainbow-delimiters-depth-9-face ((,class (:foreground ,green))))
+     (rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
+
      ;; MMM-mode
      (mmm-code-submode-face ((,class (:background ,alt-background))))
      (mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
