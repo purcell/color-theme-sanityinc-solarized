@@ -252,18 +252,10 @@ names to which it refers are bound."
      (widget-button ((,class (:underline t))))
      (widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,normal)))))
 
-     ;; compilation
-     (compilation-column-face ((,class (:foreground ,yellow))))
-     (compilation-enter-directory-face ((,class (:foreground ,green))))
-     (compilation-error-face ((,class (:foreground ,red :weight bold :underline t))))
-     (compilation-face ((,class (:foreground ,normal))))
-     (compilation-info-face ((,class (:foreground ,blue))))
-     (compilation-info ((,class (:foreground ,green :underline t))))
-     (compilation-leave-directory-face ((,class (:foreground ,green))))
-     (compilation-line-face ((,class (:foreground ,yellow))))
+     ;; Compilation (most faces politely inherit from 'success, 'error, 'warning etc.)
+     (compilation-column-number ((,class (:foreground ,yellow))))
      (compilation-line-number ((,class (:foreground ,yellow))))
      (compilation-message-face ((,class (:foreground ,blue))))
-     (compilation-warning-face ((,class (:foreground ,yellow :weight bold :underline t))))
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,faint))))
