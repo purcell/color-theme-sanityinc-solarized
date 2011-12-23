@@ -293,6 +293,7 @@ names to which it refers are bound."
      ;; js2-mode
      (js2-warning ((,class (:underline ,yellow))))
      (js2-error ((,class (:underline ,red))))
+     (js2-external-variable ((,class (:foreground ,magenta))))
 
      ;; nxml
      (nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
