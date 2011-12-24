@@ -102,7 +102,7 @@ names to which it refers are bound."
      (font-lock-doc-face ((,class (:foreground ,magenta))))
      (font-lock-doc-string-face ((,class (:foreground ,yellow))))
      (font-lock-function-name-face ((,class (:foreground ,blue))))
-     (font-lock-keyword-face ((,class (:foreground ,green :weight bold))))
+     (font-lock-keyword-face ((,class (:foreground ,green))))
      (font-lock-negation-char-face ((,class (:foreground ,green))))
      (font-lock-preprocessor-face ((,class (:foreground ,magenta))))
      (font-lock-regexp-grouping-backslash ((,class (:foreground ,magenta))))
