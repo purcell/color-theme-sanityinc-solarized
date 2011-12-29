@@ -197,7 +197,7 @@ names to which it refers are bound."
      ;; Parenthesis dimming (parenface)
      (paren-face ((,class (:foreground ,faintest :background nil))))
 
-     (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
+     (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face :weight normal))))
      (sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
      (slime-highlight-edits-face ((,class (:foreground ,strong))))
      (slime-repl-input-face ((,class (:weight normal :underline nil))))
