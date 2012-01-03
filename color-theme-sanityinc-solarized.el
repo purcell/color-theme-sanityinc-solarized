@@ -273,8 +273,10 @@ names to which it refers are bound."
      (org-done ((,class (:foreground ,green))))
      (org-todo ((,class (:foreground ,red))))
      (org-special-keyword ((,class (:foreground ,orange))))
+     (org-table ((,class (:foreground ,violet))))
 
-     (org-document-title ((,class (:foreground ,cyan))))
+     (org-document-title ((,class (:foreground ,strong))))
+     (org-document-info ((,class (:foreground ,cyan))))
      (org-column ((,class (:background ,alt-background))))
      (org-warning ((,class (:weight bold :foreground ,red))))
 
