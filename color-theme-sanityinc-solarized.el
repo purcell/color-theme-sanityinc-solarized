@@ -410,10 +410,13 @@ are bound."
 (defun color-theme-sanityinc-solarized (mode)
   "Apply either the dark or the light theme."
   (if (fboundp 'load-theme)
-      (load-theme (cond
-                   ((eq 'light mode) 'sanityinc-solarized-light)
-                   ((eq 'dark mode) 'sanityinc-solarized-dark)
-                   (t (error "invalid mode: %s" mode))) t)
+      (let ((name (cond
+                    ((eq 'light mode) 'sanityinc-solarized-light)
+                    ((eq 'dark mode) 'sanityinc-solarized-dark)
+                    (t (error "invalid mode: %s" mode)))))
+        (if (> emacs-major-version 23)
+            (load-theme name t)
+          (load-theme name)))
     (progn
       (require 'color-theme)
       (color-theme-sanityinc-solarized--with-colors
