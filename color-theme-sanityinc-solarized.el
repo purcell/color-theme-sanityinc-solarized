@@ -45,6 +45,8 @@
 
 ;;; Code:
 
+(eval-when-compile
+  (require 'cl))
 
 (defmacro color-theme-sanityinc-solarized--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various solarized colors.
