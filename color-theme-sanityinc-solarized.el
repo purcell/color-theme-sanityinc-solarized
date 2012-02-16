@@ -382,6 +382,17 @@ names to which it refers are bound."
      (gnus-group-mail-5-empty ((,class (:inherit gnus-group-mail-5 :foreground ,faint))))
      (gnus-group-mail-6-empty ((,class (:inherit gnus-group-mail-6 :foreground ,faint))))
 
+     (erc-direct-msg-face ((,class (:foreground ,yellow))))
+     (erc-error-face ((,class (:foreground ,red))))
+     (erc-header-face ((,class (:foreground ,strong :background ,alt-background))))
+     (erc-input-face ((,class (:foreground ,green))))
+     (erc-my-nick-face ((,class (:foreground ,green))))
+     (erc-nick-default-face ((,class (:weight normal :foreground ,violet))))
+     (erc-nick-msg-face ((,class (:weight normal :foreground ,yellow))))
+     (erc-notice-face ((,class (:foreground ,cyan))))
+     (erc-prompt-face ((,class (:foreground ,blue))))
+     (erc-timestamp-face ((,class (:foreground ,faint))))
+
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
      )))
