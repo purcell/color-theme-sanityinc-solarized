@@ -300,9 +300,12 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning ((,class (:underline ,yellow))))
-     (js2-error ((,class (:underline ,red))))
-     (js2-external-variable ((,class (:foreground ,magenta))))
+     (js2-warning-face ((,class (:underline ,yellow))))
+     (js2-error-face ((,class (:underline ,red))))
+     (js2-external-variable-face ((,class (:foreground ,magenta))))
+     (js2-function-param-face ((,class (:foreground ,blue))))
+     (js2-instance-member-face ((,class (:foreground ,blue))))
+     (js2-private-function-call-face ((,class (:foreground ,red))))
 
      ;; js3-mode
      (js3-warning-face ((,class (:underline ,yellow))))
