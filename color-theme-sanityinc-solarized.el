@@ -166,6 +166,7 @@ names to which it refers are bound."
      ;; Emacs interface
      (cursor ((,class (:background ,magenta))))
      (fringe ((,class (:background ,alt-background))))
+     (linum ((,class (:background ,alt-background))))
      (border ((,class (:background ,alt-background))))
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
