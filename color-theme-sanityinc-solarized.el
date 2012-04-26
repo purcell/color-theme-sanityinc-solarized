@@ -407,6 +407,7 @@ names to which it refers are bound."
 
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
+     (custom-state-tag ((,class (:foreground ,green))))
      )))
 
 (defmacro color-theme-sanityinc-solarized--frame-parameter-specs ()
