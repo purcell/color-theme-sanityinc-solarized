@@ -162,6 +162,8 @@ names to which it refers are bound."
      (ido-subdir ((,class (:foreground ,magenta))))
      (ido-first-match ((,class (:foreground ,yellow))))
      (ido-only-match ((,class (:foreground ,green))))
+     (ido-indicator ((,class (:foreground ,red :background ,background))))
+     (ido-virtual ((,class (:foreground ,faintest))))
 
      ;; Emacs interface
      (cursor ((,class (:background ,magenta))))
