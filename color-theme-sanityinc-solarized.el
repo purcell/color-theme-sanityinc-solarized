@@ -442,7 +442,7 @@ are bound."
                (color-theme-sanityinc-solarized--face-specs))
         (custom-theme-set-variables
          ',name
-         `(fci-rule-color ,current-line)
+         `(fci-rule-color ,alt-background)
          `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,background))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
