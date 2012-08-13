@@ -279,6 +279,20 @@ names to which it refers are bound."
      (term-color-white ((,class (:background ,base2 :foreground ,base2))))
      (term-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
 
+     ;; Eshell
+     (eshell-ls-archive ((,class (:foreground ,magenta))))
+     (eshell-ls-backup ((,class (:foreground ,yellow))))
+     (eshell-ls-clutter ((,class (:foreground ,orange))))
+     (eshell-ls-directory ((,class (:foreground ,blue))))
+     (eshell-ls-executable ((,class (:foreground ,green))))
+     (eshell-ls-missing ((,class (:foreground ,red))))
+     (eshell-ls-product ((,class (:foreground ,yellow))))
+     (eshell-ls-readonly ((,class (:foreground ,base1))))
+     (eshell-ls-special ((,class (:foreground ,violet))))
+     (eshell-ls-symlink ((,class (:foreground ,cyan))))
+     (eshell-ls-unreadable ((,class (:foreground ,base00))))
+     (eshell-prompt ((,class (:foreground ,green))))
+
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
