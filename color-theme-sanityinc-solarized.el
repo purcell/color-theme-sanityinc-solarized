@@ -269,6 +269,16 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
+     ;; Term
+     (term-color-black ((,class (:background ,base02 :foreground ,base02))))
+     (term-color-blue ((,class (:background ,blue :foreground ,blue))))
+     (term-color-cyan ((,class (:background ,cyan :foreground ,cyan))))
+     (term-color-green ((,class (:background ,green :foreground ,green))))
+     (term-color-magenta ((,class (:background ,magenta :foreground ,magenta))))
+     (term-color-red ((,class (:background ,red :foreground ,red))))
+     (term-color-white ((,class (:background ,base2 :foreground ,base2))))
+     (term-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
+
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
