@@ -269,6 +269,30 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
+     ;; Term
+     (term-color-black ((,class (:background ,base02 :foreground ,base02))))
+     (term-color-blue ((,class (:background ,blue :foreground ,blue))))
+     (term-color-cyan ((,class (:background ,cyan :foreground ,cyan))))
+     (term-color-green ((,class (:background ,green :foreground ,green))))
+     (term-color-magenta ((,class (:background ,magenta :foreground ,magenta))))
+     (term-color-red ((,class (:background ,red :foreground ,red))))
+     (term-color-white ((,class (:background ,base2 :foreground ,base2))))
+     (term-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
+
+     ;; Eshell
+     (eshell-ls-archive ((,class (:foreground ,magenta))))
+     (eshell-ls-backup ((,class (:foreground ,yellow))))
+     (eshell-ls-clutter ((,class (:foreground ,orange))))
+     (eshell-ls-directory ((,class (:foreground ,blue))))
+     (eshell-ls-executable ((,class (:foreground ,green))))
+     (eshell-ls-missing ((,class (:foreground ,red))))
+     (eshell-ls-product ((,class (:foreground ,yellow))))
+     (eshell-ls-readonly ((,class (:foreground ,base1))))
+     (eshell-ls-special ((,class (:foreground ,violet))))
+     (eshell-ls-symlink ((,class (:foreground ,cyan))))
+     (eshell-ls-unreadable ((,class (:foreground ,base00))))
+     (eshell-prompt ((,class (:foreground ,green))))
+
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
