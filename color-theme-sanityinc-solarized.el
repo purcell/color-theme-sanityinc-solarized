@@ -280,18 +280,18 @@ names to which it refers are bound."
      (term-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
 
      ;; Eshell
-     (eshell-ls-archive ((,class (:foreground ,magenta))))
+     (eshell-ls-archive ((,class (:foreground ,cyan :weight normal))))
      (eshell-ls-backup ((,class (:foreground ,yellow))))
-     (eshell-ls-clutter ((,class (:foreground ,orange))))
-     (eshell-ls-directory ((,class (:foreground ,blue))))
-     (eshell-ls-executable ((,class (:foreground ,green))))
-     (eshell-ls-missing ((,class (:foreground ,red))))
+     (eshell-ls-clutter ((,class (:foreground ,orange :weight normal))))
+     (eshell-ls-directory ((,class (:foreground ,blue :weight normal))))
+     (eshell-ls-executable ((,class (:foreground ,red :weight normal))))
+     (eshell-ls-missing ((,class (:foreground ,violet :weight normal))))
      (eshell-ls-product ((,class (:foreground ,yellow))))
      (eshell-ls-readonly ((,class (:foreground ,base1))))
-     (eshell-ls-special ((,class (:foreground ,violet))))
-     (eshell-ls-symlink ((,class (:foreground ,cyan))))
+     (eshell-ls-special ((,class (:foreground ,green :weight normal))))
+     (eshell-ls-symlink ((,class (:foreground ,magenta :weight normal))))
      (eshell-ls-unreadable ((,class (:foreground ,base00))))
-     (eshell-prompt ((,class (:foreground ,green))))
+     (eshell-prompt ((,class (:foreground ,green :weight normal))))
 
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
