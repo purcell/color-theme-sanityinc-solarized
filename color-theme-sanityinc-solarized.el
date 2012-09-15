@@ -269,6 +269,8 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
+     (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
+
      ;; mark-multiple
      (mm/master-face ((,class (:foreground ,yellow :inverse-video t))))
      (mm/mirror-face ((,class (:foreground ,yellow :inverse-video t))))
