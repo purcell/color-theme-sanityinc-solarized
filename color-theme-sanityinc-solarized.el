@@ -269,6 +269,10 @@ names to which it refers are bound."
      (grep-hit-face ((,class (:foreground ,blue))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
+     ;; mark-multiple
+     (mm/master-face ((,class (:foreground ,yellow :inverse-video t))))
+     (mm/mirror-face ((,class (:foreground ,yellow :inverse-video t))))
+
      ;; Term
      (term-color-black ((,class (:background ,base02 :foreground ,base02))))
      (term-color-blue ((,class (:background ,blue :foreground ,blue))))
