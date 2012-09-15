@@ -272,8 +272,8 @@ names to which it refers are bound."
      (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; mark-multiple
-     (mm/master-face ((,class (:foreground ,yellow :inverse-video t))))
-     (mm/mirror-face ((,class (:foreground ,yellow :inverse-video t))))
+     (mm/master-face ((,class (:inherit region :foreground nil :background nil))))
+     (mm/mirror-face ((,class (:inherit region :foreground nil :background nil))))
 
      ;; Term
      (term-color-black ((,class (:background ,base02 :foreground ,base02))))
