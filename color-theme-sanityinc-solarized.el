@@ -186,7 +186,7 @@ names to which it refers are bound."
      (region ((,class (:background ,contrast-background))))
      (secondary-selection ((,class (:background ,alt-background))))
 
-     (header-line ((,class (:background nil :foreground ,strong :inherit nil))))
+     (header-line ((,class (:inherit 'mode-line :foreground ,magenta))))
      (trailing-whitespace ((,class (:background ,red :underline nil))))
 
      ;; Parenthesis matching (built-in)
