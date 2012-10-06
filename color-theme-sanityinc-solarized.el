@@ -520,4 +520,9 @@ are bound."
 
 
 (provide 'color-theme-sanityinc-solarized)
+
+;; Local Variables:
+;; byte-compile-warnings: (not cl-functions)
+;; End:
+
 ;;; color-theme-sanityinc-solarized.el ends here
