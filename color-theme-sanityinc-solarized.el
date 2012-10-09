@@ -47,27 +47,39 @@
 
 (require 'cl)
 
+(defgroup color-theme-sanityinc-solarized nil
+  "The sanityinc solarized theme pair."
+  :group 'appearance
+  :prefix "color-theme-sanityinc-solarized-")
+
+(defcustom color-theme-sanityinc-solarized-rgb-is-srgb
+  (not (eq window-system 'ns))
+  "Indicates whether RGB triplets are treated as sRGB by the host Emacs.
+Set this to t if using the sRGB patch on OS X."
+  :group 'color-theme-sanityinc-solarized)
+
 (defmacro color-theme-sanityinc-solarized--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various solarized colors.
 
 `MODE' should be set to either 'light or 'dark."
   ;; These are the Generic RGB equivalents of the "official" sRGB hex values
-  `(let* ((base03  "#042028")            ; (0.0159 0.1265 0.1597)
-          (base02  "#0a2832")            ; (0.0394 0.1601 0.1983)
-          (base01  "#465a61")            ; (0.2767 0.3567 0.3830)
-          (base00  "#52676f")            ; (0.3244 0.4072 0.4385)
-          (base0   "#708183")            ; (0.4406 0.5096 0.5169)
-          (base1   "#81908f")            ; (0.5060 0.5649 0.5636)
-          (base2   "#e9e2cb")            ; (0.9161 0.8900 0.7978)
-          (base3   "#fcf4dc")            ; (0.9894 0.9579 0.8641)
-          (yellow  "#a57705")            ; (0.6475 0.4675 0.0235)
-          (orange  "#bd3612")            ; (0.7418 0.2133 0.0735)
-          (red     "#c60007")            ; (0.7770 0.0000 0.0290)
-          (magenta "#c61b6e")            ; (0.7774 0.1080 0.4352)
-          (violet  "#5859b7")            ; (0.3479 0.3514 0.7179)
-          (blue    "#2075c7")            ; (0.1275 0.4627 0.7823)
-          (cyan    "#259185")            ; (0.1468 0.5708 0.5250)
-          (green   "#728a05")            ; (0.4498 0.5412 0.0202)
+  `(let* ((srgb color-theme-sanityinc-solarized-rgb-is-srgb)
+          (base03  (if srgb "#002b36" "#042028")) ; (0.0159 0.1265 0.1597)
+          (base02  (if srgb "#073642" "#0a2832")) ; (0.0394 0.1601 0.1983)
+          (base01  (if srgb "#586e75" "#465a61")) ; (0.2767 0.3567 0.3830)
+          (base00  (if srgb "#657b83" "#52676f")) ; (0.3244 0.4072 0.4385)
+          (base0   (if srgb "#839496" "#708183")) ; (0.4406 0.5096 0.5169)
+          (base1   (if srgb "#93a1a1" "#81908f")) ; (0.5060 0.5649 0.5636)
+          (base2   (if srgb "#eee8d5" "#e9e2cb")) ; (0.9161 0.8900 0.7978)
+          (base3   (if srgb "#fdf6e3" "#fcf4dc")) ; (0.9894 0.9579 0.8641)
+          (yellow  (if srgb "#b58900" "#a57705")) ; (0.6475 0.4675 0.0235)
+          (orange  (if srgb "#cb4b16" "#bd3612")) ; (0.7418 0.2133 0.0735)
+          (red     (if srgb "#dc322f" "#c60007")) ; (0.7770 0.0000 0.0290)
+          (magenta (if srgb "#d33682" "#c61b6e")) ; (0.7774 0.1080 0.4352)
+          (violet  (if srgb "#6c71c4" "#5859b7")) ; (0.3479 0.3514 0.7179)
+          (blue    (if srgb "#268bd2" "#2075c7")) ; (0.1275 0.4627 0.7823)
+          (cyan    (if srgb "#2aa198" "#259185")) ; (0.1468 0.5708 0.5250)
+          (green   (if srgb "#859900" "#728a05")) ; (0.4498 0.5412 0.0202)
           (foregrounds (list base1 base0 base00 base01))
           (backgrounds (list base03 base02))
           (contrast-backgrounds (list base3 base2)))

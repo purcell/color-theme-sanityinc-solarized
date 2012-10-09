@@ -60,4 +60,8 @@ instead.
 
 Note that, depending on your version of Emacs, the colors in this
 theme may not be rendered accurately. See, for example,
-[this OS X Emacs bug](http://debbugs.gnu.org/cgi/bugreport.cgi?bug=8402).
+[this OS X Emacs bug](http://debbugs.gnu.org/cgi/bugreport.cgi?bug=8402). A
+customizable value `color-theme-sanityinc-solarized-rgb-is-srgb`
+controls whether or not RGB color literals used by Emacs are treated
+as sRGB; consider adjusting this value if the rendered colors don't
+quite match those on the solarized page.
