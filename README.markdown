@@ -8,7 +8,7 @@ popular "Solarized" theme pair.
 ### Via ELPA
 
 If you have Emacs 24, which includes package.el, you can just install
-the theme using the package on marmalade-repo.org.
+the theme using the packages on marmalade-repo.org or [Melpa](http://melpa.milkbox.net/).
 
 Make sure you have something like the following in your Emacs startup
 file (`~/.emacs.d/init.el`, or `~/.emacs`):
