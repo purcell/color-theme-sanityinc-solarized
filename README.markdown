@@ -65,3 +65,9 @@ customizable value `color-theme-sanityinc-solarized-rgb-is-srgb`
 controls whether or not RGB color literals used by Emacs are treated
 as sRGB; consider adjusting this value if the rendered colors don't
 quite match those on the solarized page.
+
+<hr>
+
+[![](http://api.coderwall.com/purcell/endorsecount.png)](http://coderwall.com/purcell)
+
+[![](http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png)](http://uk.linkedin.com/in/stevepurcell)
