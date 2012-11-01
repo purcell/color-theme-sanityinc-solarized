@@ -398,6 +398,26 @@ names to which it refers are bound."
      (message-header-newsgroups ((,class (:foreground ,cyan :background nil :slant normal))))
      (message-separator ((,class (:foreground ,magenta))))
 
+     ;; Jabber
+     (jabber-chat-prompt-local ((,class (:foreground ,yellow))))
+     (jabber-chat-prompt-foreign ((,class (:foreground ,orange))))
+     (jabber-chat-prompt-system ((,class (:foreground ,yellow :weight bold))))
+     (jabber-chat-text-local ((,class (:foreground ,yellow))))
+     (jabber-chat-text-foreign ((,class (:foreground ,orange))))
+     (jabber-chat-text-error ((,class (:foreground ,red))))
+
+     (jabber-roster-user-online ((,class (:foreground ,green))))
+     (jabber-roster-user-xa ((,class :foreground ,faint)))
+     (jabber-roster-user-dnd ((,class :foreground ,yellow)))
+     (jabber-roster-user-away ((,class (:foreground ,orange))))
+     (jabber-roster-user-chatty ((,class (:foreground ,violet))))
+     (jabber-roster-user-error ((,class (:foreground ,red))))
+     (jabber-roster-user-offline ((,class (:foreground ,faint))))
+
+     (jabber-rare-time-face ((,class (:foreground ,faint))))
+     (jabber-activity-face ((,class (:foreground ,violet))))
+     (jabber-activity-personal-face ((,class (:foreground ,cyan))))
+
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
      (gnus-cite-2 ((,class (:inherit outline-2 :foreground nil))))
