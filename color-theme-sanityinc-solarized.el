@@ -230,6 +230,11 @@ names to which it refers are bound."
      (diff-file-header ((,class (:foreground ,blue :background nil))))
      (diff-hunk-header ((,class (:foreground ,magenta))))
 
+     (ediff-even-diff-A ((,class (:foreground nil :background nil :inverse-video t))))
+     (ediff-even-diff-B ((,class (:foreground nil :background nil :inverse-video t))))
+     (ediff-odd-diff-A  ((,class (:foreground ,faint :background nil :inverse-video t))))
+     (ediff-odd-diff-B  ((,class (:foreground ,faint :background nil :inverse-video t))))
+
      ;; undo-tree
      (undo-tree-visualizer-default-face ((,class (:foreground ,normal))))
      (undo-tree-visualizer-current-face ((,class (:foreground ,green :weight bold))))
