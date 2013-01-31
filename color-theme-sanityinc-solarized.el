@@ -239,6 +239,8 @@ names to which it refers are bound."
      (ediff-odd-diff-A  ((,class (:foreground ,faint :background nil :inverse-video t))))
      (ediff-odd-diff-B  ((,class (:foreground ,faint :background nil :inverse-video t))))
 
+     (eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
+
      ;; undo-tree
      (undo-tree-visualizer-default-face ((,class (:foreground ,normal))))
      (undo-tree-visualizer-current-face ((,class (:foreground ,green :weight bold))))
