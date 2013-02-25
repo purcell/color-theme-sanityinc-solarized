@@ -507,6 +507,7 @@ names to which it refers are bound."
      (erc-pal-face ((,class (:foreground ,orange))))
      (erc-prompt-face ((,class (:foreground ,blue))))
      (erc-timestamp-face ((,class (:foreground ,cyan))))
+     (erc-keyword-face ((,class (:foreground ,green))))
 
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
