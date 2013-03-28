@@ -449,6 +449,10 @@ names to which it refers are bound."
      (jabber-activity-face ((,class (:foreground ,violet))))
      (jabber-activity-personal-face ((,class (:foreground ,cyan))))
 
+     ;; Powerline
+     (powerline-active1 ((t (:foreground ,foreground :background ,contrast-background))))
+     (powerline-active2 ((t (:foreground ,foreground :background ,alt-background))))
+
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
      (gnus-cite-2 ((,class (:inherit outline-2 :foreground nil))))
