@@ -577,9 +577,11 @@ are bound."
                     ((eq 'light mode) 'sanityinc-solarized-light)
                     ((eq 'dark mode) 'sanityinc-solarized-dark)
                     (t (error "invalid mode: %s" mode)))))
-        (if (> emacs-major-version 23)
-            (load-theme name t)
-          (load-theme name)))
+        (if (boundp 'custom-enabled-themes)
+            (custom-set-variables `(custom-enabled-themes '(,name)))
+          (if (> emacs-major-version 23)
+              (load-theme name t)
+            (load-theme name))))
     (progn
       (require 'color-theme)
       (color-theme-sanityinc-solarized--with-colors
