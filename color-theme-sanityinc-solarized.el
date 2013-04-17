@@ -243,6 +243,9 @@ names to which it refers are bound."
 
      (eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
 
+     ;; macrostep
+     (macrostep-expansion-highlight-face ((,class (:inherit highlight :foreground nil))))
+
      ;; undo-tree
      (undo-tree-visualizer-default-face ((,class (:foreground ,normal))))
      (undo-tree-visualizer-current-face ((,class (:foreground ,green :weight bold))))
