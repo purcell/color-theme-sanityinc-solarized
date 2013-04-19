@@ -597,7 +597,8 @@ Argument MODE: 'light or 'dark"
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
          `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,background))
-         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
+         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+         '(ansi-term-color-vector ansi-color-names-vector)))
        (provide-theme ',name))))
 
 
@@ -623,7 +624,8 @@ Argument MODE: 'light or 'dark"
           ,@(color-theme-sanityinc-solarized--face-specs)))
        ;; ansi-color - comint and other modes that handle terminal color escape sequences
        (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan background))
-       (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
+       (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+       (setq ansi-term-color-vector ansi-color-names-vector)))))
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
