@@ -562,7 +562,8 @@ are bound."
 
 
 (defmacro color-theme-sanityinc-solarized--define-theme (mode)
-  "Define either the dark or the light theme."
+  "Define either the dark or the light theme.
+Argument MODE: 'light or 'dark"
   (let ((name (intern (format "sanityinc-solarized-%s" (symbol-name mode))))
         (doc (format "A version of Ethan Schoonover's 'Solarized' theme (%s version)" mode)))
     `(progn
