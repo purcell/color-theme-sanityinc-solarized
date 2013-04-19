@@ -160,6 +160,12 @@ names to which it refers are bound."
      (rainbow-delimiters-depth-9-face ((,class (:foreground ,green))))
      (rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
 
+     ;; EDTS errors
+     (edts-face-warning-line ((t (:background nil :inherit flymake-warnline))))
+     (edts-face-warning-mode-line ((,class (:background nil :foreground ,orange :weight bold))))
+     (edts-face-error-line ((t (:background nil :inherit flymake-errline))))
+     (edts-face-error-mode-line ((,class (:background nil :foreground ,red :weight bold))))
+
      ;; MMM-mode
      (mmm-code-submode-face ((,class (:background ,alt-background))))
      (mmm-comment-submode-face ((,class (:inherit font-lock-comment-face))))
