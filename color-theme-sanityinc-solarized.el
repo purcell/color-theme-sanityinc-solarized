@@ -591,7 +591,7 @@ Argument MODE: 'light or 'dark"
              (260 . ,cyan)
              (280 . ,blue)
              (300 . ,magenta)
-             (320 . violet)
+             (320 . ,violet)
              (340 . ,red)
              (360 . ,orange)))
          `(vc-annotate-very-old-color nil)
