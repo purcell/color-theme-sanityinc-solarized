@@ -543,6 +543,17 @@ names to which it refers are bound."
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
      (custom-state-tag ((,class (:foreground ,green))))
+
+     ;; ansi-term
+     (term ((,class (:foreground nil :background nil :inherit default))))
+     (term-color-black   ((,class (:foreground ,normal :background ,normal))))
+     (term-color-red     ((,class (:foreground ,red :background ,red))))
+     (term-color-green   ((,class (:foreground ,green :background ,green))))
+     (term-color-yellow  ((,class (:foreground ,yellow :background ,yellow))))
+     (term-color-blue    ((,class (:foreground ,blue :background ,blue))))
+     (term-color-magenta ((,class (:foreground ,magenta :background ,magenta))))
+     (term-color-cyan    ((,class (:foreground ,cyan :background ,cyan))))
+     (term-color-white   ((,class (:foreground ,background :background ,background))))
      )))
 
 (defmacro color-theme-sanityinc-solarized--frame-parameter-specs ()
@@ -597,8 +608,7 @@ Argument MODE: 'light or 'dark"
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
          `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,background))
-         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
-         '(ansi-term-color-vector ansi-color-names-vector)))
+         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
 
