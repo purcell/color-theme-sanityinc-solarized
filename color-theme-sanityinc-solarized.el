@@ -352,9 +352,6 @@ names to which it refers are bound."
      (eshell-ls-unreadable ((,class (:foreground ,base00))))
      (eshell-prompt ((,class (:foreground ,green :weight normal))))
 
-     ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
-     (outline-3 ((,class (:inherit nil :foreground ,green))))
-
      (org-agenda-structure ((,class (:foreground ,violet))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
      (org-agenda-done ((,class (:foreground ,green))))
@@ -465,6 +462,17 @@ names to which it refers are bound."
      ;; Powerline
      (powerline-active1 ((t (:foreground ,normal :background ,contrast-background))))
      (powerline-active2 ((t (:foreground ,normal :background ,alt-background))))
+
+     ;; Outline
+     (outline-1 ((,class :inherit nil)))
+     (outline-2 ((,class (:inherit nil :foreground ,yellow))))
+     (outline-3 ((,class (:inherit nil :foreground ,violet))))
+     (outline-4 ((,class (:inherit nil :foreground ,cyan))))
+     (outline-5 ((,class (:inherit nil :foreground ,orange))))
+     (outline-6 ((,class (:inherit nil :foreground ,blue))))
+     (outline-7 ((,class (:inherit nil :foreground ,yellow))))
+     (outline-8 ((,class (:inherit nil :foreground ,violet))))
+     (outline-9 ((,class (:inherit nil :foreground ,cyan))))
 
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
