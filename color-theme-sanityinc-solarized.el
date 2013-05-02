@@ -590,6 +590,7 @@ Argument MODE: 'light or 'dark"
         (doc (format "A version of Ethan Schoonover's 'Solarized' theme (%s version)" mode)))
     `(progn
        (deftheme ,name ,doc)
+       (put ',name 'theme-immediate t)
        (color-theme-sanityinc-solarized--with-colors
         ',mode
         (apply 'custom-theme-set-faces ',name
