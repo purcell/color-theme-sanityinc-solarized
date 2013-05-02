@@ -128,7 +128,6 @@ names to which it refers are bound."
      (success ((,class (:foreground ,green))))
      (error ((,class (:foreground ,red))))
      (warning ((,class (:foreground ,orange))))
-     (outline-4 ((,class (:slant normal :foreground ,faint))))
 
      ;; Flymake
      (flymake-warnline ((,class (:underline ,orange :background ,background))))
@@ -352,8 +351,6 @@ names to which it refers are bound."
      (eshell-ls-symlink ((,class (:foreground ,magenta :weight normal))))
      (eshell-ls-unreadable ((,class (:foreground ,base00))))
      (eshell-prompt ((,class (:foreground ,green :weight normal))))
-
-     (regex-tool-matched-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
      (outline-3 ((,class (:inherit nil :foreground ,green))))
