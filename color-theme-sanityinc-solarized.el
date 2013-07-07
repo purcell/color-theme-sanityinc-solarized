@@ -129,9 +129,13 @@ names to which it refers are bound."
      (error ((,class (:foreground ,red))))
      (warning ((,class (:foreground ,orange))))
 
+     ;; Flycheck
+     (flycheck-error ((,class (:underline (:style wave :color ,red)))))
+     (flycheck-warning ((,class (:underline (:style wave :color ,yellow)))))
+
      ;; Flymake
-     (flymake-warnline ((,class (:underline ,orange :background ,background))))
-     (flymake-errline ((,class (:underline ,red :background ,background))))
+     (flymake-warnline ((,class (:underline (:style wave :color ,yellow) :background ,background))))
+     (flymake-errline ((,class (:underline (:style wave :color ,red) :background ,background))))
 
      ;; Clojure errors
      (clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
