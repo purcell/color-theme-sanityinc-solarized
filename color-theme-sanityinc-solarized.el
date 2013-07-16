@@ -187,6 +187,8 @@ names to which it refers are bound."
      (ido-indicator ((,class (:foreground ,red :background ,background))))
      (ido-virtual ((,class (:foreground ,faintest))))
 
+     (flx-highlight-face ((,class (:inherit nil :foreground ,cyan :weight normal :underline nil))))
+
      ;; which-function
      (which-func ((,class (:foreground ,blue :background nil :weight bold))))
 
