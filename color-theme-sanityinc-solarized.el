@@ -220,6 +220,10 @@ names to which it refers are bound."
      (show-paren-match ((,class (:background nil :foreground nil :inverse-video t))))
      (show-paren-mismatch ((,class (:background ,magenta :foreground ,background))))
 
+     ;; Smartparens paren matching
+     (sp-show-pair-match-face ((,class (:foreground nil :background nil :inherit show-paren-match))))
+     (sp-show-pair-mismatch-face ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
+
      ;; Parenthesis matching (mic-paren)
      (paren-face-match ((,class (:foreground nil :background nil :inherit show-paren-match))))
      (paren-face-mismatch ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
