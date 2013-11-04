@@ -393,6 +393,7 @@ names to which it refers are bound."
      (markdown-link-face ((,class (:foreground ,blue :underline t))))
 
      (hl-sexp-face ((,class (:background ,alt-background))))
+     (highlight-symbol-face ((,class (:background ,alt-background :weight bold))))
      (highlight-80+ ((,class (:background ,alt-background))))
 
      ;; Python-specific overrides
