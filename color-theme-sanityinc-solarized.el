@@ -277,6 +277,7 @@ names to which it refers are bound."
      (diredp-executable-tag ((,class (:foreground ,red :background nil))))
      (diredp-file-name ((,class (:foreground ,yellow))))
      (diredp-file-suffix ((,class (:foreground ,green))))
+     (diredp-flag-mark ((,class (:foreground ,green :inverse-video t))))
      (diredp-flag-mark-line ((,class (:background nil :inherit highlight))))
      (diredp-ignored-file-name ((,class (:foreground ,faintest))))
      (diredp-link-priv ((,class (:background nil :foreground ,violet))))
