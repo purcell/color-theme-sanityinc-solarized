@@ -696,11 +696,13 @@ Argument MODE: 'light or 'dark"
 
 ;;;###autoload
 (defun color-theme-sanityinc-solarized-dark ()
+  "Apply the dark solarized theme."
   (interactive)
   (color-theme-sanityinc-solarized 'dark))
 
 ;;;###autoload
 (defun color-theme-sanityinc-solarized-light ()
+  "Apply the light solarized theme."
   (interactive)
   (color-theme-sanityinc-solarized 'light))
 
