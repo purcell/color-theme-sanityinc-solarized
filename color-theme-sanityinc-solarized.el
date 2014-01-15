@@ -316,6 +316,8 @@ names to which it refers are bound."
      (magit-log-head-label-local ((,class (:foreground ,magenta :box nil :weight bold))))
      (magit-log-head-label-remote ((,class (:foreground ,violet :box nil :weight bold))))
      (magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
+     (magit-process-ok ((,class (:inherit success))))
+     (magit-process-ng ((,class (:inherit error))))
      (magit-section-title ((,class (:foreground ,blue :weight bold))))
 
      ;; git-gutter
