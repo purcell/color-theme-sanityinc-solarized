@@ -212,7 +212,7 @@ names to which it refers are bound."
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
      (gui-element ((,class (:background ,alt-background :foreground ,normal))))
-     (mode-line ((,class (:foreground nil :background ,alt-background :weight bold
+     (mode-line ((,class (:foreground nil :background ,alt-background :weight normal
                                  :box (:line-width 1 :color ,normal)))))
      (mode-line-buffer-id ((,class (:foreground ,magenta :background nil))))
      (mode-line-inactive ((,class (:inherit mode-line
