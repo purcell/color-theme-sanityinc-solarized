@@ -357,6 +357,17 @@ names to which it refers are bound."
      (mm/master-face ((,class (:inherit region :foreground nil :background nil))))
      (mm/mirror-face ((,class (:inherit region :foreground nil :background nil))))
 
+     ;; helm
+     (helm-buffer-saved-out ((,class (:inherit warning))))
+     (helm-buffer-size ((,class (:foreground ,violet))))
+     (helm-buffer-not-saved ((,class (:foreground ,yellow))))
+     (helm-buffer-process ((,class (:foreground ,cyan))))
+     (helm-ff-directory ((,class (:foreground ,cyan))))
+     (helm-candidate-number ((,class (:foreground ,red))))
+     (helm-selection ((,class (:inherit highlight))))
+     (helm-separator ((,class (:foreground ,magenta))))
+     (helm-source-header ((,class (:inherit org-document-title))))
+
      ;; Term
      (term-color-black ((,class (:background ,base02 :foreground ,base02))))
      (term-color-blue ((,class (:background ,blue :foreground ,blue))))
