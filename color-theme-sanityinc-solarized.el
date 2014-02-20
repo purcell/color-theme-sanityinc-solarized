@@ -1,6 +1,6 @@
 ;;; color-theme-sanityinc-solarized.el --- A version of Ethan Schoonover's Solarized themes
 
-;; Copyright (C) 2011 Steve Purcell
+;; Copyright (C) 2011-2014 Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: themes
