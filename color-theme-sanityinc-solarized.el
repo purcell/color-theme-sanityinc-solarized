@@ -120,7 +120,7 @@ names to which it refers are bound."
       (italic (:slant italic))
       (font-lock-builtin-face (:foreground ,violet))
       (font-lock-comment-delimiter-face (:foreground ,faintest :slant italic))
-      (font-lock-comment-face (:foreground ,faint :slant italic))
+      (font-lock-comment-face (:foreground ,faintest :slant italic))
       (font-lock-constant-face (:foreground ,violet))
       (font-lock-doc-face (:foreground ,magenta))
       (font-lock-doc-string-face (:foreground ,yellow))
