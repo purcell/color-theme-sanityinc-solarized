@@ -225,7 +225,7 @@ names to which it refers are bound."
       (mode-line-emphasis (:foreground ,strong))
       (mode-line-highlight (:foreground ,magenta :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
-      (region (:background ,contrast-background))
+      (region (:foreground ,strong :inverse-video t))
       (secondary-selection (:background ,alt-background))
 
       (header-line (:inherit mode-line :foreground ,magenta :background nil))
