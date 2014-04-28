@@ -60,7 +60,9 @@
   :prefix "color-theme-sanityinc-solarized-")
 
 (defcustom color-theme-sanityinc-solarized-rgb-is-srgb
-  (not (eq window-system 'ns))
+  (or (not (eq window-system 'ns))
+      (when (eval-when-compile (boundp 'ns-use-srgb-colorspace))
+        ns-use-srgb-colorspace))
   "Indicates whether RGB triplets are treated as sRGB by the host Emacs.
 Set this to t if using the sRGB patch on OS X."
   :group 'color-theme-sanityinc-solarized)
