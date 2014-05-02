@@ -271,7 +271,7 @@ names to which it refers are bound."
       (diff-hl-insert (:background ,green))
       (diff-hl-change (:background ,blue))
       (diff-hl-delete (:background ,yellow))
-      (diff-hl-unknown :background ,purple)
+      (diff-hl-unknown :background ,violet)
 
       (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
       (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))
