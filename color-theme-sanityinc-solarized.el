@@ -511,8 +511,8 @@ names to which it refers are bound."
       (jabber-activity-personal-face (:foreground ,cyan))
 
       ;; Powerline
-      (powerline-active1 ((t (:foreground ,normal :background ,contrast-background))))
-      (powerline-active2 ((t (:foreground ,normal :background ,alt-background))))
+      (powerline-active1 (:foreground ,normal :background ,contrast-background))
+      (powerline-active2 (:foreground ,normal :background ,alt-background))
 
       ;; Outline
       (outline-1 :inherit nil)
