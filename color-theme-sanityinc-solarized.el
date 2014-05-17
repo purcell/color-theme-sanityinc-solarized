@@ -176,9 +176,9 @@ names to which it refers are bound."
       (rainbow-delimiters-unmatched-face (:foreground ,red))
 
       ;; EDTS errors
-      (edts-face-warning-line ((t (:background nil :inherit flymake-warnline))))
+      (edts-face-warning-line (:background nil :inherit flymake-warnline))
       (edts-face-warning-mode-line (:background nil :foreground ,orange :weight bold))
-      (edts-face-error-line ((t (:background nil :inherit flymake-errline))))
+      (edts-face-error-line (:background nil :inherit flymake-errline))
       (edts-face-error-mode-line (:background nil :foreground ,red :weight bold))
 
       ;; MMM-mode
