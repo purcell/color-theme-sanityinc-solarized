@@ -213,7 +213,7 @@ names to which it refers are bound."
       (which-func (:foreground ,blue :background nil :weight bold))
 
       ;; Emacs interface
-      (cursor (:background ,magenta))
+      (cursor (:background ,strong))
       (fringe (:background ,alt-background))
       (linum (:background ,alt-background :foreground ,green))
       (border (:background ,alt-background))
