@@ -215,7 +215,7 @@ names to which it refers are bound."
       ;; Emacs interface
       (cursor (:background ,strong))
       (fringe (:background ,alt-background))
-      (linum (:background ,alt-background :foreground ,green))
+      (linum (:background ,alt-background :foreground ,green :italic nil))
       (border (:background ,alt-background))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,alt-background))
