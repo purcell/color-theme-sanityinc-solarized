@@ -375,6 +375,7 @@ names to which it refers are bound."
       (helm-buffer-size (:foreground ,violet))
       (helm-buffer-not-saved (:foreground ,yellow))
       (helm-buffer-process (:foreground ,cyan))
+      (helm-buffer-directory (:foreground ,blue))
       (helm-ff-directory (:foreground ,cyan))
       (helm-candidate-number (:foreground ,red))
       (helm-selection (:inherit highlight))
