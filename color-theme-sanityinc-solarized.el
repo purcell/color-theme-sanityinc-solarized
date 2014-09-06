@@ -379,7 +379,7 @@ names to which it refers are bound."
       (helm-candidate-number (:foreground ,red))
       (helm-selection (:inherit highlight))
       (helm-separator (:foreground ,magenta))
-      (helm-source-header (:inherit org-document-title))
+      (helm-source-header (:weight bold :foreground ,yellow :height 1.44))
 
       ;; Term
       (term-color-black (:background ,base02 :foreground ,base02))
