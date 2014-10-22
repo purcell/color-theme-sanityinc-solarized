@@ -1,3 +1,6 @@
+[![Melpa Status](http://melpa.milkbox.net/packages/color-theme-sanityinc-solarized-badge.svg)](http://melpa.milkbox.net/#/color-theme-sanityinc-solarized)
+[![Melpa Stable Status](http://melpa-stable.milkbox.net/packages/color-theme-sanityinc-solarized-badge.svg)](http://melpa-stable.milkbox.net/#/color-theme-sanityinc-solarized)
+
 # Another Emacs Solarized Theme pair
 
 This is an alternate Emacs color-theme version of Ethan Schoonover's
