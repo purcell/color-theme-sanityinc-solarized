@@ -1,5 +1,5 @@
-[![Melpa Status](http://melpa.milkbox.net/packages/color-theme-sanityinc-solarized-badge.svg)](http://melpa.milkbox.net/#/color-theme-sanityinc-solarized)
-[![Melpa Stable Status](http://melpa-stable.milkbox.net/packages/color-theme-sanityinc-solarized-badge.svg)](http://melpa-stable.milkbox.net/#/color-theme-sanityinc-solarized)
+[![Melpa Status](http://melpa.org/packages/color-theme-sanityinc-solarized-badge.svg)](http://melpa.org/#/color-theme-sanityinc-solarized)
+[![Melpa Stable Status](http://stable.melpa.org/packages/color-theme-sanityinc-solarized-badge.svg)](http://stable.melpa.org/#/color-theme-sanityinc-solarized)
 
 # Another Emacs Solarized Theme pair
 
@@ -11,7 +11,7 @@ popular "Solarized" theme pair.
 ### Via ELPA
 
 If you have Emacs 24, which includes package.el, you can just install
-the theme using the packages on marmalade-repo.org or [Melpa](http://melpa.milkbox.net/).
+the theme using the packages on marmalade-repo.org or [Melpa](http://melpa.org/).
 
 Make sure you have something like the following in your Emacs startup
 file (`~/.emacs.d/init.el`, or `~/.emacs`):
