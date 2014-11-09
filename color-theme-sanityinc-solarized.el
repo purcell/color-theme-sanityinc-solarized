@@ -346,6 +346,11 @@ names to which it refers are bound."
       (git-gutter-fr:added (:foreground ,green :weight bold))
       (git-gutter-fr:deleted (:foreground ,red :weight bold))
 
+      ;; guide-key
+      (guide-key/prefix-command-face (:foreground ,blue))
+      (guide-key/highlight-command-face (:foreground ,green))
+      (guide-key/key-face (:foreground ,faintest))
+
       (link (:foreground nil :underline t))
       (widget-button (:underline t))
       (widget-field (:background ,alt-background :box (:line-width 1 :color ,normal)))
