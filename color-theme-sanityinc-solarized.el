@@ -540,6 +540,8 @@ names to which it refers are bound."
       (ledger-font-occur-xact-face (:inherit highlight))
       (ledger-font-payee-cleared-face (:foreground ,green))
       (ledger-font-payee-uncleared-face (:foreground ,cyan))
+      (ledger-font-posting-date-face (:foreground ,yellow))
+      (ledger-font-posting-amount-face (:foreground ,normal))
       (ledger-font-posting-account-cleared-face (:foreground ,blue))
       (ledger-font-posting-account-face (:foreground ,violet))
       (ledger-font-posting-account-pending-face (:foreground ,yellow))
