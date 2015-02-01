@@ -387,6 +387,20 @@ names to which it refers are bound."
       (helm-separator (:foreground ,magenta))
       (helm-source-header (:weight bold :foreground ,yellow :height 1.44))
 
+      ;; company
+      (company-preview (:foreground ,faint))
+      (company-preview-common (:inherit company-preview :foreground ,yellow))
+      (company-preview-search (:inherit company-preview :foreground ,blue))
+      (company-tooltip (:background ,contrast-background))
+      (company-tooltip-selection (:background ,alt-background))
+      (company-tooltip-common (:inherit company-tooltip :foreground ,yellow))
+      (company-tooltip-common-selection (:inherit company-tooltip-selection :foreground ,yellow))
+      (company-tooltip-search (:inherit company-tooltip :foreground ,blue))
+      (company-tooltip-annotation (:inherit company-tooltip :foreground ,green))
+      (company-scrollbar-bg (:inherit 'company-tooltip :background ,alt-background))
+      (company-scrollbar-fg (:background ,contrast-background))
+      (company-echo-common (:inherit company-echo :foreground ,yellow))
+
       ;; Term
       (term-color-black (:background ,base02 :foreground ,base02))
       (term-color-blue (:background ,blue :foreground ,blue))
