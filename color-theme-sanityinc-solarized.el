@@ -456,7 +456,7 @@ names to which it refers are bound."
       (markdown-link-face (:foreground ,blue :underline t))
 
       (hl-sexp-face (:background ,alt-background))
-      (highlight-symbol-face (:background ,alt-background :weight bold))
+      (highlight-symbol-face (:inherit isearch-lazy-highlight-face))
       (highlight-80+ (:background ,alt-background))
 
       ;; Python-specific overrides
