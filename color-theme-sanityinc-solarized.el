@@ -538,15 +538,15 @@ names to which it refers are bound."
       (powerline-active2 (:foreground ,normal :background ,alt-background))
 
       ;; Outline
-      (outline-1 :inherit nil)
-      (outline-2 (:inherit nil :foreground ,yellow))
-      (outline-3 (:inherit nil :foreground ,violet))
-      (outline-4 (:inherit nil :foreground ,cyan))
+      (outline-1 (:inherit nil :foreground ,blue))
+      (outline-2 (:inherit nil :foreground ,violet))
+      (outline-3 (:inherit nil :foreground ,cyan))
+      (outline-4 (:inherit nil :foreground ,yellow))
       (outline-5 (:inherit nil :foreground ,orange))
       (outline-6 (:inherit nil :foreground ,blue))
-      (outline-7 (:inherit nil :foreground ,yellow))
-      (outline-8 (:inherit nil :foreground ,violet))
-      (outline-9 (:inherit nil :foreground ,cyan))
+      (outline-7 (:inherit nil :foreground ,violet))
+      (outline-8 (:inherit nil :foreground ,cyan))
+      (outline-9 (:inherit nil :foreground ,yellow))
 
       ;; Ledger-mode
       (ledger-font-comment-face (:inherit font-lock-comment-face))
