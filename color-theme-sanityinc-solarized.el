@@ -294,6 +294,7 @@ names to which it refers are bound."
 
       ;; dired+
       (diredp-compressed-file-suffix (:foreground ,blue))
+      (diredp-date-time (:foreground ,blue))
       (diredp-deletion (:inherit error :inverse-video t))
       (diredp-deletion-file-name (:inherit error))
       (diredp-dir-heading (:foreground ,green :background nil :weight bold))
