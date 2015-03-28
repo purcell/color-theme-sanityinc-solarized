@@ -39,8 +39,8 @@
 ;; Alternatively, or in older Emacs versions, use one of the provided
 ;; wrapper commands to activate a theme:
 
-;;     M-x color-theme-solarized-light
-;;     M-x color-theme-solarized-dark
+;;     M-x color-theme-sanityinc-solarized-light
+;;     M-x color-theme-sanityinc-solarized-dark
 ;;
 ;;; Credit:
 
