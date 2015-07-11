@@ -162,9 +162,9 @@ names to which it refers are bound."
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-warning (:underline (:style wave :color ,yellow)))
-      (flycheck-fringe-error (:foreground ,red :inverse-video t))
-      (flycheck-fringe-info (:foreground ,cyan :inverse-video t))
-      (flycheck-fringe-warning (:foreground ,yellow :inverse-video t))
+      (flycheck-fringe-error (:foreground ,red :background ,red))
+      (flycheck-fringe-info (:foreground ,cyan :background ,cyan))
+      (flycheck-fringe-warning (:foreground ,yellow :background ,orange))
 
       ;; Flymake
       (flymake-warnline (:underline (:style wave :color ,yellow) :background ,background))
@@ -232,7 +232,7 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,strong))
-      (fringe (:background ,alt-background))
+      (fringe (:background ,alt-background :foreground ,normal))
       (linum (:background ,alt-background :foreground ,green :italic nil))
       (border (:background ,alt-background))
       (border-glyph (nil))
@@ -289,10 +289,10 @@ names to which it refers are bound."
       (diff-refine-added (:inherit diff-added :inverse-video t))
       (diff-refine-removed (:inherit diff-removed :inverse-video t))
 
-      (diff-hl-insert (:background ,green))
-      (diff-hl-change (:background ,blue))
-      (diff-hl-delete (:background ,yellow))
-      (diff-hl-unknown :background ,violet)
+      (diff-hl-insert (:foreground ,green :background ,green))
+      (diff-hl-change (:foreground ,blue :background ,blue))
+      (diff-hl-delete (:foreground ,yellow :background ,yellow))
+      (diff-hl-unknown (:foreground ,violet :background ,violet))
 
       (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
       (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))
