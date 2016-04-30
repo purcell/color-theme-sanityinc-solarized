@@ -766,7 +766,7 @@ Argument MODE: 'light or 'dark"
              (360 . ,orange)))
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
-         `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,background))
+         `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,contrast-background))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
