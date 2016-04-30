@@ -792,7 +792,7 @@ Argument MODE: 'light or 'dark"
           ,@(color-theme-sanityinc-solarized--frame-parameter-specs)
           ,@(color-theme-sanityinc-solarized--face-specs)))
        ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan background))
+       (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan contrast-background))
        (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
 
 ;;;###autoload
