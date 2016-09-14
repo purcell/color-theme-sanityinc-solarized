@@ -11,20 +11,7 @@ popular "Solarized" theme pair.
 ### Via ELPA
 
 If you have Emacs 24, which includes package.el, you can just install
-the theme using the packages on marmalade-repo.org or [Melpa](http://melpa.org/).
-
-Make sure you have something like the following in your Emacs startup
-file (`~/.emacs.d/init.el`, or `~/.emacs`):
-
-    (add-to-list 'package-archives
-                 '("marmalade" . "http://marmalade-repo.org/packages/"))
-
-To make that take effect, either evaluate that elisp expression or restart your Emacs.
-
-Then use `M-x package-list-packages`, select
-`color-theme-sanityinc-solarized` from the list by pressing `i`, then
-press `x` to execute the changes. At that point, the package will be
-installed.
+the theme using the package on [MELPA](http://melpa.org/).
 
 ### Manually
 
