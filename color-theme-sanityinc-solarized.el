@@ -124,7 +124,7 @@ setting `frame-background-mode'.
            (faintest (nth 3 foregrounds))
            (contrast-background (nth 1 contrast-backgrounds))
            (class '((class color) (min-colors 89)))
-           (background-mode (if (eq ,mode 'day) 'light 'dark)))
+           (background-mode ,mode))
        ,@body)))
 
 (defmacro color-theme-sanityinc-solarized--face-specs ()
