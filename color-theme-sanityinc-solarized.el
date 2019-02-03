@@ -164,17 +164,42 @@ names to which it refers are bound."
       (error (:foreground ,red))
       (warning (:foreground ,orange))
 
+      ;; window-divider
+      (window-divider (:foreground ,faintest))
+      (window-divider-first-pixel (:foreground ,contrast-background))
+      (window-divider-last-pixel (:foreground ,contrast-background))
+
+      ;; ace-window
+      (aw-background-face (:foreground ,contrast-background))
+      (aw-leading-char-face (:foreground ,yellow))
+
+      ;; avy
+      (avy-background-face (:foreground ,contrast-background))
+      (avy-lead-face (:foreground ,background :background ,yellow))
+      (avy-lead-face-0 (:foreground ,background :background ,blue))
+      (avy-lead-face-1 (:foreground ,background :background ,cyan))
+      (avy-lead-face-2 (:foreground ,background :background ,green))
+
       ;; Flycheck
       (flycheck-error (:underline (:style wave :color ,red)))
       (flycheck-info (:underline (:style wave :color ,cyan)))
       (flycheck-warning (:underline (:style wave :color ,yellow)))
-      (flycheck-fringe-error (:foreground ,red :background ,red))
-      (flycheck-fringe-info (:foreground ,cyan :background ,cyan))
-      (flycheck-fringe-warning (:foreground ,yellow :background ,orange))
+      (flycheck-fringe-error (:foreground ,red))
+      (flycheck-fringe-info (:foreground ,cyan))
+      (flycheck-fringe-warning (:foreground ,yellow))
+      (flycheck-color-mode-line-error-face (:foreground ,red))
+      (flycheck-color-mode-line-warning-face (:foreground ,yellow))
+      (flycheck-color-mode-line-info-face (:foreground ,cyan))
+      (flycheck-color-mode-line-running-face (:foreground ,faintest))
+      (flycheck-color-mode-line-success-face (:foreground ,green))
 
       ;; Flymake
-      (flymake-warnline (:underline (:style wave :color ,yellow) :background ,background))
-      (flymake-errline (:underline (:style wave :color ,red) :background ,background))
+      (flymake-error (:underline (:style wave :color ,red)))
+      (flymake-note (:underline (:style wave :color ,cyan)))
+      (flymake-warning (:underline (:style wave :color ,yellow)))
+
+      ;; Flyspell
+      (flyspell-incorrect (:underline (:style wave :color ,red)))
 
       ;; Clojure errors
       (clojure-test-failure-face (:background nil :inherit flymake-warnline))
@@ -237,27 +262,30 @@ names to which it refers are bound."
       (which-func (:foreground ,blue :background nil :weight bold))
 
       ;; Emacs interface
-      (cursor (:background ,strong))
-      (fringe (:background ,alt-background :foreground ,normal))
-      (linum (:background ,alt-background :foreground ,green :italic nil))
-      (border (:background ,alt-background))
+      (cursor (:background ,red))
+      (fringe (:background ,alt-background :foreground ,faintest))
+      (linum (:background ,alt-background :foreground ,faintest :italic nil :underline nil))
+      (line-number (:background ,alt-background :foreground ,faintest))
+      (line-number-current-line (:inherit line-number :foreground ,normal :weight bold))
+      (veritcal-border (:foreground ,contrast-background))
+      (border (:background ,contrast-background :foreground ,alt-background))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,alt-background))
-      (gui-element (:background ,alt-background :foreground ,normal))
-      (mode-line (:foreground nil :background ,alt-background :weight normal
-                              :box (:line-width 1 :color ,normal)))
+      (gui-element (:background ,contrast-background :foreground ,normal))
+      (mode-line (:foreground ,normal :background ,contrast-background :weight normal
+                              :box (:line-width 1 :color ,contrast-background)))
       (mode-line-buffer-id (:foreground ,magenta :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,faintest
                                     :background ,alt-background :weight normal
                                     :box (:line-width 1 :color ,normal)))
-      (mode-line-emphasis (:foreground ,strong))
+      (mode-line-emphasis (:foreground ,normal :slant italic))
       (mode-line-highlight (:foreground ,magenta :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
-      (region (:foreground ,strong :inverse-video t))
+      (region (:background ,contrast-background :inverse-video nil))
       (secondary-selection (:background ,alt-background))
 
-      (header-line (:inherit mode-line :foreground ,magenta :background nil))
+      (header-line (:inherit mode-line-inactive :foreground ,cyan :background nil))
       (trailing-whitespace (:background ,red :underline nil))
 
       ;; Parenthesis matching (built-in)
