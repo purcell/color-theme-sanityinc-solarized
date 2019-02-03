@@ -65,6 +65,7 @@
         ns-use-srgb-colorspace))
   "Indicates whether RGB triplets are treated as sRGB by the host Emacs.
 Set this to t if using the sRGB patch on OS X."
+  :type 'boolean
   :group 'color-theme-sanityinc-solarized)
 
 ;; name     sRGB      Gen RGB   256       16              8
