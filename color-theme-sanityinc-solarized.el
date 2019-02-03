@@ -3,10 +3,9 @@
 ;; Copyright (C) 2011-2014 Steve Purcell
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
-;; Keywords: themes
-;; X-URL: http://github.com/purcell/color-theme-sanityinc-solarized
-;; URL: http://github.com/purcell/color-theme-sanityinc-solarized
-;; Version: {{VERSION}}
+;; Keywords: faces themes
+;; Homepage: http://github.com/purcell/color-theme-sanityinc-solarized
+;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
