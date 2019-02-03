@@ -5,6 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes
 ;; Homepage: http://github.com/purcell/color-theme-sanityinc-solarized
+;; Package-Requires: ((cl-lib "0.6"))
 ;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -51,7 +52,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 
 (defgroup color-theme-sanityinc-solarized nil
   "The sanityinc solarized theme pair."
@@ -113,7 +114,7 @@ setting `frame-background-mode'.
           (backgrounds (list base03 base02))
           (contrast-backgrounds (list base3 base2)))
      (when (eq 'light ,mode)
-       (rotatef backgrounds contrast-backgrounds)
+       (cl-rotatef backgrounds contrast-backgrounds)
        (setq foregrounds (reverse foregrounds)))
      (let ((background (nth 0 backgrounds))
            (alt-background (nth 1 backgrounds))
@@ -157,7 +158,7 @@ names to which it refers are bound."
       (font-lock-type-face (:foreground ,blue))
       (font-lock-variable-name-face (:foreground ,violet))
       (font-lock-warning-face (:weight bold :foreground ,red))
-      (shadow (:foreground ,(fourth foregrounds)))
+      (shadow (:foreground ,(cl-fourth foregrounds)))
       (success (:foreground ,green))
       (error (:foreground ,red))
       (warning (:foreground ,orange))
