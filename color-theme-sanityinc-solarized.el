@@ -123,7 +123,7 @@ setting `frame-background-mode'.
            (normal (nth 1 foregrounds))
            (faint (nth 2 foregrounds))
            (faintest (nth 3 foregrounds))
-           (contrast-background (nth 1 contrast-backgrounds))
+           (contrast-background (nth 0 contrast-backgrounds))
            (class '((class color) (min-colors 89)))
            (background-mode ,mode))
        ,@body)))
