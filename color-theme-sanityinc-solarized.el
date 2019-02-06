@@ -241,13 +241,17 @@ names to which it refers are bound."
       ;; Search
       (match (:foreground ,blue :background ,background :inverse-video t))
       (isearch (:foreground ,yellow :background ,background :inverse-video t))
-      (isearch-lazy-highlight-face (:foreground ,cyan :background ,background :inverse-video t))
+      (lazy-highlight (:foreground ,cyan :background ,background :inverse-video t))
       (isearch-fail (:background ,background :inherit font-lock-warning-face :inverse-video t))
 
       ;; Anzu
       (anzu-mode-line (:foreground ,orange))
+      (anzu-mode-line-no-match (:foreground ,red))
       (anzu-replace-highlight (:inherit isearch-lazy-highlight-face))
       (anzu-replace-to (:inherit isearch))
+      (anzu-match-1 (:foreground ,cyan ))
+      (anzu-match-2 (:foreground ,yellow))
+      (anzu-match-3 (:foreground ,blue))
 
       ;; IDO
       (ido-subdir (:foreground ,magenta))
@@ -258,29 +262,43 @@ names to which it refers are bound."
 
       (flx-highlight-face (:inherit nil :foreground ,cyan :weight normal :underline nil))
 
+      ;; Ivy
+      (ivy-action (:foreground ,violet))
+      (ivy-confirm-face (:foreground ,green))
+      (ivy-current-match (:foreground ,yellow :inherit highlight :underline t))
+      (ivy-cursor (:background ,alt-background))
+      (ivy-match-required-face (:foreground ,red :background ,background))
+      (ivy-remote (:foreground ,orange))
+      (ivy-subdir (:foreground ,magenta))
+      (ivy-virtual (:foreground ,faintest))
+      (ivy-minibuffer-match-face-1 (:foreground ,cyan))
+      (ivy-minibuffer-match-face-2 (:foreground ,orange))
+      (ivy-minibuffer-match-face-3 (:foreground ,blue))
+      (ivy-minibuffer-match-face-4 (:foreground ,green))
+
       ;; which-function
       (which-func (:foreground ,blue :background nil :weight bold))
 
       ;; Emacs interface
-      (cursor (:background ,red))
+      (cursor (:background ,magenta))
       (fringe (:background ,alt-background :foreground ,faintest))
       (linum (:background ,alt-background :foreground ,faintest :italic nil :underline nil))
       (line-number (:background ,alt-background :foreground ,faintest))
       (line-number-current-line (:inherit line-number :foreground ,normal :weight bold))
-      (veritcal-border (:foreground ,contrast-background))
-      (border (:background ,contrast-background :foreground ,alt-background))
+      (vertical-border (:foreground ,faintest))
+      (border (:background ,alt-background :foreground ,faintest))
       (border-glyph (nil))
       (highlight (:inverse-video nil :background ,alt-background))
       (gui-element (:background ,contrast-background :foreground ,normal))
-      (mode-line (:foreground ,normal :background ,contrast-background :weight normal
-                              :box (:line-width 1 :color ,contrast-background)))
+      (mode-line (:foreground ,strong :background ,alt-background :weight normal
+                              :box (:line-width 1 :color ,normal)))
       (mode-line-buffer-id (:foreground ,magenta :background nil))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,faintest
                                     :background ,alt-background :weight normal
-                                    :box (:line-width 1 :color ,normal)))
-      (mode-line-emphasis (:foreground ,normal :slant italic))
-      (mode-line-highlight (:foreground ,magenta :box nil :weight bold))
+                                    :box (:line-width 1 :color ,faintest)))
+      (mode-line-emphasis (:slant italic))
+      (mode-line-highlight (:foreground ,violet :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
       (region (:background ,contrast-background :inverse-video nil))
       (secondary-selection (:background ,alt-background))
@@ -520,6 +538,7 @@ names to which it refers are bound."
       (hl-sexp-face (:background ,alt-background))
       (highlight-symbol-face (:inherit isearch-lazy-highlight-face))
       (highlight-80+ (:background ,alt-background))
+      (symbol-overlay-temp-face (:inherit highlight))
 
       ;; Python-specific overrides
       (py-builtins-face (:foreground ,orange :weight normal))
@@ -778,7 +797,7 @@ Argument MODE: 'light or 'dark"
         (custom-theme-set-variables
          ',name
          `(frame-background-mode ',background-mode)
-         `(beacon-color ,red)
+         `(beacon-color ,magenta)
          `(fci-rule-color ,alt-background)
          `(vc-annotate-color-map
            '((20 . ,red)
@@ -801,6 +820,7 @@ Argument MODE: 'light or 'dark"
              (360 . ,orange)))
          `(vc-annotate-very-old-color nil)
          `(vc-annotate-background nil)
+         `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
          `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,contrast-background))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
