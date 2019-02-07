@@ -18,10 +18,10 @@ the theme using the package on [MELPA](http://melpa.org/).
 
 Add the directory containing this README to your Emacs `load-path`,
 and `require` the main file:
-
-    (add-to-list 'load-path "/dir/containing/color-theme-sanityinc-solarized")
-    (require 'color-theme-sanityinc-solarized)
-
+```elisp
+(add-to-list 'load-path "/dir/containing/color-theme-sanityinc-solarized")
+(require 'color-theme-sanityinc-solarized)
+```
 
 
 
