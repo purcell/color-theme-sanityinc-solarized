@@ -4,7 +4,7 @@
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes
-;; Homepage: http://github.com/purcell/color-theme-sanityinc-solarized
+;; Homepage: https://github.com/purcell/color-theme-sanityinc-solarized
 ;; Package-Requires: ((emacs "24.1") (cl-lib "0.6"))
 ;; Version: 0
 
