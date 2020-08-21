@@ -491,6 +491,18 @@ names to which it refers are bound."
       (term-color-white (:background ,base2 :foreground ,base2))
       (term-color-yellow (:background ,yellow :foreground ,yellow))
 
+      ;; VTerm
+      ;; the background color are used as bright color in vterm.el
+      (vterm-color-default (:foreground nil :background nil :inherit default))
+      (vterm-color-black   (:foreground ,base02 :background ,base03))
+      (vterm-color-blue    (:foreground ,blue :background ,base0))
+      (vterm-color-cyan    (:foreground ,cyan :background ,base1))
+      (vterm-color-green   (:foreground ,green :background ,base01))
+      (vterm-color-magenta (:foreground ,magenta :background ,violet))
+      (vterm-color-red     (:foreground ,red :background ,orange))
+      (vterm-color-white   (:foreground ,base2 :background ,base3))
+      (vterm-color-yellow  (:foreground ,yellow :background ,base00))
+
       ;; Eshell
       (eshell-ls-archive (:foreground ,cyan :weight normal))
       (eshell-ls-backup (:foreground ,yellow))
