@@ -281,7 +281,7 @@ names to which it refers are bound."
 
       ;; Emacs interface
       (cursor (:background ,magenta))
-      (fringe (:background ,alt-background :foreground ,faintest))
+      (fringe (:background ,background :foreground ,faintest))
       (linum (:background ,alt-background :foreground ,faintest :italic nil :underline nil))
       (line-number (:background ,alt-background :foreground ,faintest))
       (line-number-current-line (:inherit line-number :foreground ,normal :weight bold))
