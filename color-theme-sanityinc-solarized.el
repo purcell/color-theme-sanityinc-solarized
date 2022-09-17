@@ -202,16 +202,16 @@ names to which it refers are bound."
       (flyspell-incorrect (:underline (:style wave :color ,red)))
 
       ;; Clojure errors
-      (clojure-test-failure-face (:background nil :inherit flymake-warnline))
-      (clojure-test-error-face (:background nil :inherit flymake-errline))
-      (clojure-test-success-face (:background nil :foreground nil :underline ,green))
+      (clojure-test-failure-face (:background unspecified :inherit flymake-warnline))
+      (clojure-test-error-face (:background unspecified :inherit flymake-errline))
+      (clojure-test-success-face (:background unspecified :foreground unspecified :underline ,green))
 
       ;; For Brian Carper's extended clojure syntax table
       (clojure-keyword (:foreground ,yellow))
       (clojure-parens (:foreground ,strong))
       (clojure-braces (:foreground ,green))
       (clojure-brackets (:foreground ,yellow))
-      (clojure-double-quote (:foreground ,cyan :background nil))
+      (clojure-double-quote (:foreground ,cyan :background unspecified))
       (clojure-special (:foreground ,blue))
       (clojure-java-call (:foreground ,magenta))
 
@@ -228,10 +228,10 @@ names to which it refers are bound."
       (rainbow-delimiters-unmatched-face (:foreground ,red))
 
       ;; EDTS errors
-      (edts-face-warning-line (:background nil :inherit flymake-warnline))
-      (edts-face-warning-mode-line (:background nil :foreground ,orange :weight bold))
-      (edts-face-error-line (:background nil :inherit flymake-errline))
-      (edts-face-error-mode-line (:background nil :foreground ,red :weight bold))
+      (edts-face-warning-line (:background unspecified :inherit flymake-warnline))
+      (edts-face-warning-mode-line (:background unspecified :foreground ,orange :weight bold))
+      (edts-face-error-line (:background unspecified :inherit flymake-errline))
+      (edts-face-error-mode-line (:background unspecified :foreground ,red :weight bold))
 
       ;; MMM-mode
       (mmm-code-submode-face (:background ,alt-background))
@@ -277,7 +277,7 @@ names to which it refers are bound."
       (ivy-minibuffer-match-face-4 (:foreground ,green))
 
       ;; which-function
-      (which-func (:foreground ,blue :background nil :weight bold))
+      (which-func (:foreground ,blue :background unspecified :weight bold))
 
       ;; Emacs interface
       (cursor (:background ,magenta))
@@ -292,7 +292,7 @@ names to which it refers are bound."
       (gui-element (:background ,contrast-background :foreground ,normal))
       (mode-line (:foreground ,strong :background ,alt-background :weight normal
                               :box (:line-width 1 :color ,normal)))
-      (mode-line-buffer-id (:foreground ,magenta :background nil))
+      (mode-line-buffer-id (:foreground ,magenta :background unspecified))
       (mode-line-inactive (:inherit mode-line
                                     :foreground ,faintest
                                     :background ,alt-background :weight normal
@@ -303,27 +303,27 @@ names to which it refers are bound."
       (region (:background ,contrast-background :inverse-video nil))
       (secondary-selection (:background ,alt-background))
 
-      (header-line (:inherit mode-line-inactive :foreground ,cyan :background nil))
+      (header-line (:inherit mode-line-inactive :foreground ,cyan :background unspecified))
       (trailing-whitespace (:background ,red :underline nil))
 
       ;; Parenthesis matching (built-in)
-      (show-paren-match (:background nil :foreground nil :inverse-video t))
+      (show-paren-match (:background unspecified :foreground unspecified :inverse-video t))
       (show-paren-mismatch (:background ,magenta :foreground ,background))
 
       ;; Smartparens paren matching
-      (sp-show-pair-match-face (:foreground nil :background nil :inherit show-paren-match))
-      (sp-show-pair-mismatch-face (:foreground nil :background nil :inherit show-paren-mismatch))
+      (sp-show-pair-match-face (:foreground unspecified :background unspecified :inherit show-paren-match))
+      (sp-show-pair-mismatch-face (:foreground unspecified :background unspecified :inherit show-paren-mismatch))
 
       ;; Parenthesis matching (mic-paren)
-      (paren-face-match (:foreground nil :background nil :inherit show-paren-match))
-      (paren-face-mismatch (:foreground nil :background nil :inherit show-paren-mismatch))
-      (paren-face-no-match (:foreground nil :background nil :inherit show-paren-mismatch))
+      (paren-face-match (:foreground unspecified :background unspecified :inherit show-paren-match))
+      (paren-face-mismatch (:foreground unspecified :background unspecified :inherit show-paren-mismatch))
+      (paren-face-no-match (:foreground unspecified :background unspecified :inherit show-paren-mismatch))
 
       ;; Parenthesis dimming (parenface)
-      (paren-face (:foreground ,faintest :background nil))
+      (paren-face (:foreground ,faintest :background unspecified))
 
-      (sh-heredoc (:foreground nil :inherit font-lock-string-face :weight normal))
-      (sh-quoted-exec (:foreground nil :inherit font-lock-preprocessor-face))
+      (sh-heredoc (:foreground unspecified :inherit font-lock-string-face :weight normal))
+      (sh-quoted-exec (:foreground unspecified :inherit font-lock-preprocessor-face))
       (slime-highlight-edits-face (:foreground ,strong))
       (slime-repl-input-face (:weight normal :underline nil))
       (slime-repl-prompt-face (:underline nil :weight bold :foreground ,magenta))
@@ -335,8 +335,8 @@ names to which it refers are bound."
       (diff-added (:foreground ,green))
       (diff-changed (:foreground ,violet))
       (diff-removed (:foreground ,orange))
-      (diff-header (:foreground ,cyan :background nil))
-      (diff-file-header (:foreground ,blue :background nil))
+      (diff-header (:foreground ,cyan :background unspecified))
+      (diff-file-header (:foreground ,blue :background unspecified))
       (diff-hunk-header (:foreground ,magenta))
       (diff-refine-added (:inherit diff-added :inverse-video t))
       (diff-refine-removed (:inherit diff-removed :inverse-video t))
@@ -346,15 +346,15 @@ names to which it refers are bound."
       (diff-hl-delete (:foreground ,yellow :background ,yellow))
       (diff-hl-unknown (:foreground ,violet :background ,violet))
 
-      (ediff-even-diff-A (:foreground nil :background nil :inverse-video t))
-      (ediff-even-diff-B (:foreground nil :background nil :inverse-video t))
-      (ediff-odd-diff-A  (:foreground ,faint :background nil :inverse-video t))
-      (ediff-odd-diff-B  (:foreground ,faint :background nil :inverse-video t))
+      (ediff-even-diff-A (:foreground unspecified :background unspecified :inverse-video t))
+      (ediff-even-diff-B (:foreground unspecified :background unspecified :inverse-video t))
+      (ediff-odd-diff-A  (:foreground ,faint :background unspecified :inverse-video t))
+      (ediff-odd-diff-B  (:foreground ,faint :background unspecified :inverse-video t))
 
       (eldoc-highlight-function-argument (:foreground ,green :weight bold))
 
       ;; macrostep
-      (macrostep-expansion-highlight-face (:inherit highlight :foreground nil))
+      (macrostep-expansion-highlight-face (:inherit highlight :foreground unspecified))
 
       ;; undo-tree
       (undo-tree-visualizer-default-face (:foreground ,normal))
@@ -367,25 +367,25 @@ names to which it refers are bound."
       (diredp-date-time (:foreground ,blue))
       (diredp-deletion (:inherit error :inverse-video t))
       (diredp-deletion-file-name (:inherit error))
-      (diredp-dir-heading (:foreground ,green :background nil :weight bold))
-      (diredp-dir-priv (:foreground ,cyan :background nil))
-      (diredp-exec-priv (:foreground ,blue :background nil))
-      (diredp-executable-tag (:foreground ,red :background nil))
+      (diredp-dir-heading (:foreground ,green :background unspecified :weight bold))
+      (diredp-dir-priv (:foreground ,cyan :background unspecified))
+      (diredp-exec-priv (:foreground ,blue :background unspecified))
+      (diredp-executable-tag (:foreground ,red :background unspecified))
       (diredp-file-name (:foreground ,yellow))
       (diredp-file-suffix (:foreground ,green))
       (diredp-flag-mark (:foreground ,green :inverse-video t))
-      (diredp-flag-mark-line (:background nil :inherit highlight))
+      (diredp-flag-mark-line (:background unspecified :inherit highlight))
       (diredp-ignored-file-name (:foreground ,faintest))
-      (diredp-link-priv (:background nil :foreground ,violet))
+      (diredp-link-priv (:background unspecified :foreground ,violet))
       (diredp-mode-line-flagged (:foreground ,red))
       (diredp-mode-line-marked (:foreground ,green))
-      (diredp-no-priv (:background nil))
+      (diredp-no-priv (:background unspecified))
       (diredp-number (:foreground ,yellow))
-      (diredp-other-priv (:background nil :foreground ,magenta))
-      (diredp-rare-priv (:foreground ,red :background nil))
-      (diredp-read-priv (:foreground ,green :background nil))
+      (diredp-other-priv (:background unspecified :foreground ,magenta))
+      (diredp-rare-priv (:foreground ,red :background unspecified))
+      (diredp-read-priv (:foreground ,green :background unspecified))
       (diredp-symlink (:foreground ,violet))
-      (diredp-write-priv (:foreground ,yellow :background nil))
+      (diredp-write-priv (:foreground ,yellow :background unspecified))
 
       ;; Magit
       (magit-header-line (:inherit nil :weight bold))
@@ -430,7 +430,7 @@ names to which it refers are bound."
       (guide-key/highlight-command-face (:foreground ,green))
       (guide-key/key-face (:foreground ,faintest))
 
-      (link (:foreground nil :underline t))
+      (link (:foreground unspecified :underline t))
       (widget-button (:underline t))
       (widget-field (:background ,alt-background :box (:line-width 1 :color ,normal)))
 
@@ -446,13 +446,13 @@ names to which it refers are bound."
       (grep-context-face (:foreground ,faint))
       (grep-error-face (:foreground ,red :weight bold :underline t))
       (grep-hit-face (:foreground ,blue))
-      (grep-match-face (:foreground nil :background nil :inherit match))
+      (grep-match-face (:foreground unspecified :background unspecified :inherit match))
 
-      (regex-tool-matched-face (:foreground nil :background nil :inherit match))
+      (regex-tool-matched-face (:foreground unspecified :background unspecified :inherit match))
 
       ;; mark-multiple
-      (mm/master-face (:inherit region :foreground nil :background nil))
-      (mm/mirror-face (:inherit region :foreground nil :background nil))
+      (mm/master-face (:inherit region :foreground unspecified :background unspecified))
+      (mm/mirror-face (:inherit region :foreground unspecified :background unspecified))
 
       ;; helm
       (helm-buffer-saved-out (:inherit warning))
@@ -545,7 +545,7 @@ names to which it refers are bound."
 
       ;; js2-mode
       (js2-warning-face (:underline ,yellow))
-      (js2-error-face (:foreground nil :underline ,red))
+      (js2-error-face (:foreground unspecified :underline ,red))
       (js2-external-variable-face (:foreground ,magenta))
       (js2-function-param-face (:foreground ,blue))
       (js2-instance-member-face (:foreground ,blue))
@@ -553,7 +553,7 @@ names to which it refers are bound."
 
       ;; js3-mode
       (js3-warning-face (:underline ,yellow))
-      (js3-error-face (:foreground nil :underline ,red))
+      (js3-error-face (:foreground unspecified :underline ,red))
       (js3-external-variable-face (:foreground ,magenta))
       (js3-function-param-face (:foreground ,blue))
       (js3-jsdoc-tag-face (:foreground ,magenta))
@@ -586,12 +586,12 @@ names to which it refers are bound."
       (erb-comment-delim-face (:background ,alt-background))
 
       ;; Message-mode
-      (message-header-other (:foreground nil :background nil :weight normal))
+      (message-header-other (:foreground unspecified :background unspecified :weight normal))
       (message-header-subject (:inherit message-header-other :weight bold :foreground ,yellow))
       (message-header-to (:inherit message-header-other :weight bold :foreground ,orange))
-      (message-header-cc (:inherit message-header-to :foreground nil))
-      (message-header-name (:foreground ,green :background nil))
-      (message-header-newsgroups (:foreground ,cyan :background nil :slant normal))
+      (message-header-cc (:inherit message-header-to :foreground unspecified))
+      (message-header-name (:foreground ,green :background unspecified))
+      (message-header-newsgroups (:foreground ,cyan :background unspecified :slant normal))
       (message-separator (:foreground ,magenta))
 
       ;; Jabber
@@ -674,20 +674,20 @@ names to which it refers are bound."
       (mu4e-title-face (:inherit nil :foreground ,green))
 
       ;; Gnus
-      (gnus-cite-1 (:inherit outline-1 :foreground nil))
-      (gnus-cite-2 (:inherit outline-2 :foreground nil))
-      (gnus-cite-3 (:inherit outline-3 :foreground nil))
-      (gnus-cite-4 (:inherit outline-4 :foreground nil))
-      (gnus-cite-5 (:inherit outline-5 :foreground nil))
-      (gnus-cite-6 (:inherit outline-6 :foreground nil))
-      (gnus-cite-7 (:inherit outline-7 :foreground nil))
-      (gnus-cite-8 (:inherit outline-8 :foreground nil))
+      (gnus-cite-1 (:inherit outline-1 :foreground unspecified))
+      (gnus-cite-2 (:inherit outline-2 :foreground unspecified))
+      (gnus-cite-3 (:inherit outline-3 :foreground unspecified))
+      (gnus-cite-4 (:inherit outline-4 :foreground unspecified))
+      (gnus-cite-5 (:inherit outline-5 :foreground unspecified))
+      (gnus-cite-6 (:inherit outline-6 :foreground unspecified))
+      (gnus-cite-7 (:inherit outline-7 :foreground unspecified))
+      (gnus-cite-8 (:inherit outline-8 :foreground unspecified))
       ;; there are several more -cite- faces...
       (gnus-header-content (:inherit message-header-other))
       (gnus-header-subject (:inherit message-header-subject))
       (gnus-header-from (:inherit message-header-other-face :weight bold :foreground ,orange))
       (gnus-header-name (:inherit message-header-name))
-      (gnus-button (:inherit link :foreground nil))
+      (gnus-button (:inherit link :foreground unspecified))
       (gnus-signature (:inherit font-lock-comment-face))
 
       (gnus-summary-normal-unread (:foreground ,strong :weight normal))
@@ -701,28 +701,28 @@ names to which it refers are bound."
       (gnus-summary-high-read (:foreground ,green :weight normal))
       (gnus-summary-high-ancient (:foreground ,green :weight normal))
       (gnus-summary-high-ticked (:foreground ,orange :weight normal))
-      (gnus-summary-cancelled (:foreground ,red :background nil :weight normal))
+      (gnus-summary-cancelled (:foreground ,red :background unspecified :weight normal))
 
       (gnus-group-mail-low (:foreground ,faintest))
       (gnus-group-mail-low-empty (:foreground ,faintest))
-      (gnus-group-mail-1 (:foreground nil :weight normal :inherit outline-1))
-      (gnus-group-mail-2 (:foreground nil :weight normal :inherit outline-2))
-      (gnus-group-mail-3 (:foreground nil :weight normal :inherit outline-3))
-      (gnus-group-mail-4 (:foreground nil :weight normal :inherit outline-4))
-      (gnus-group-mail-5 (:foreground nil :weight normal :inherit outline-5))
-      (gnus-group-mail-6 (:foreground nil :weight normal :inherit outline-6))
+      (gnus-group-mail-1 (:foreground unspecified :weight normal :inherit outline-1))
+      (gnus-group-mail-2 (:foreground unspecified :weight normal :inherit outline-2))
+      (gnus-group-mail-3 (:foreground unspecified :weight normal :inherit outline-3))
+      (gnus-group-mail-4 (:foreground unspecified :weight normal :inherit outline-4))
+      (gnus-group-mail-5 (:foreground unspecified :weight normal :inherit outline-5))
+      (gnus-group-mail-6 (:foreground unspecified :weight normal :inherit outline-6))
       (gnus-group-mail-1-empty (:inherit gnus-group-mail-1 :foreground ,faint))
       (gnus-group-mail-2-empty (:inherit gnus-group-mail-2 :foreground ,faint))
       (gnus-group-mail-3-empty (:inherit gnus-group-mail-3 :foreground ,faint))
       (gnus-group-mail-4-empty (:inherit gnus-group-mail-4 :foreground ,faint))
       (gnus-group-mail-5-empty (:inherit gnus-group-mail-5 :foreground ,faint))
       (gnus-group-mail-6-empty (:inherit gnus-group-mail-6 :foreground ,faint))
-      (gnus-group-news-1 (:foreground nil :weight normal :inherit outline-5))
-      (gnus-group-news-2 (:foreground nil :weight normal :inherit outline-6))
-      (gnus-group-news-3 (:foreground nil :weight normal :inherit outline-7))
-      (gnus-group-news-4 (:foreground nil :weight normal :inherit outline-8))
-      (gnus-group-news-5 (:foreground nil :weight normal :inherit outline-1))
-      (gnus-group-news-6 (:foreground nil :weight normal :inherit outline-2))
+      (gnus-group-news-1 (:foreground unspecified :weight normal :inherit outline-5))
+      (gnus-group-news-2 (:foreground unspecified :weight normal :inherit outline-6))
+      (gnus-group-news-3 (:foreground unspecified :weight normal :inherit outline-7))
+      (gnus-group-news-4 (:foreground unspecified :weight normal :inherit outline-8))
+      (gnus-group-news-5 (:foreground unspecified :weight normal :inherit outline-1))
+      (gnus-group-news-6 (:foreground unspecified :weight normal :inherit outline-2))
       (gnus-group-news-1-empty (:inherit gnus-group-news-1 :foreground ,faint))
       (gnus-group-news-2-empty (:inherit gnus-group-news-2 :foreground ,faint))
       (gnus-group-news-3-empty (:inherit gnus-group-news-3 :foreground ,faint))
@@ -755,7 +755,7 @@ names to which it refers are bound."
       (custom-state-tag (:foreground ,green))
 
       ;; ansi-term
-      (term (:foreground nil :background nil :inherit default))
+      (term (:foreground unspecified :background unspecified :inherit default))
       (term-color-black   (:foreground ,normal :background ,normal))
       (term-color-red     (:foreground ,red :background ,red))
       (term-color-green   (:foreground ,green :background ,green))
