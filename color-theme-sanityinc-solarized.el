@@ -776,6 +776,16 @@ names to which it refers are bound."
       (tab-line-tab-current (:inherit tab-line-tab :foreground ,background :background ,normal))
       (tab-line-tab-inactive-alternate (:inherit tab-line-tab-inactive))
       (tab-line-tab-modified (:weight bold))
+
+      ;; window-tool-bar
+      (window-tool-bar-button (:inherit tab-line
+                                        :foreground ,normal :background ,background
+                                        :box (:line-width 1 :color ,normal :style released-button)))
+      (window-tool-bar-button-hover (:inherit window-tool-bar-button
+                                              :foreground ,background :background ,normal))
+      (window-tool-bar-button-disabled (:inherit window-tool-bar-button
+                                                 :foreground ,faint :background ,alt-background
+                                                 :box (:line-width 1 :color ,faint :style released-button)))
       ))))
 
 (defmacro color-theme-sanityinc-solarized--frame-parameter-specs ()
