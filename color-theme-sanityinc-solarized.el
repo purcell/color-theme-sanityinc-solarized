@@ -764,6 +764,28 @@ names to which it refers are bound."
       (term-color-magenta (:foreground ,magenta :background ,magenta))
       (term-color-cyan    (:foreground ,cyan :background ,cyan))
       (term-color-white   (:foreground ,background :background ,background))
+
+      ;; tab-line
+      (tab-line (:inherit variable-pitch
+                          :foreground ,faintest :background ,alt-background))
+      (tab-line-tab (:foreground ,background :background ,faint
+                                 :box (:line-width 1 :color ,normal :style released-button)))
+      (tab-line-tab-inactive (:inherit tab-line-tab :foreground ,faint :background ,background
+                                       :box (:line-width 1 :color ,faint :style released-button)))
+      (tab-line-highlight (:foreground ,background :background ,normal))
+      (tab-line-tab-current (:inherit tab-line-tab :foreground ,background :background ,normal))
+      (tab-line-tab-inactive-alternate (:inherit tab-line-tab-inactive))
+      (tab-line-tab-modified (:weight bold))
+
+      ;; window-tool-bar
+      (window-tool-bar-button (:inherit tab-line
+                                        :foreground ,normal :background ,background
+                                        :box (:line-width 1 :color ,normal :style released-button)))
+      (window-tool-bar-button-hover (:inherit window-tool-bar-button
+                                              :foreground ,background :background ,normal))
+      (window-tool-bar-button-disabled (:inherit window-tool-bar-button
+                                                 :foreground ,faint :background ,alt-background
+                                                 :box (:line-width 1 :color ,faint :style released-button)))
       ))))
 
 (defmacro color-theme-sanityinc-solarized--frame-parameter-specs ()
