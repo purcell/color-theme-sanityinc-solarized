@@ -5,7 +5,7 @@
 ;; Author: Steve Purcell <steve@sanityinc.com>
 ;; Keywords: faces themes
 ;; Homepage: https://github.com/purcell/color-theme-sanityinc-solarized
-;; Package-Requires: ((emacs "24.1") (cl-lib "0.6"))
+;; Package-Requires: ((emacs "24.1"))
 ;; Version: 0
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -51,8 +51,6 @@
 ;; https://github.com/sellout/solarized/blob/master/emacs-color-theme-solarized/color-theme-solarized.el
 
 ;;; Code:
-
-(require 'cl-lib)
 
 (defgroup color-theme-sanityinc-solarized nil
   "The sanityinc solarized theme pair."
@@ -803,11 +801,14 @@ are bound."
       (foreground-color . ,normal)
       (mouse-color . ,cyan)))))
 
+(eval-and-compile
+  (defun color-theme-sanityinc-solarized--theme-name (mode)
+    (intern (format "sanityinc-solarized-%s" (symbol-name mode)))))
 
 (defmacro color-theme-sanityinc-solarized--define-theme (mode)
   "Define either the dark or the light theme.
 Argument MODE: 'light or 'dark"
-  (let ((name (intern (format "sanityinc-solarized-%s" (symbol-name mode))))
+  (let ((name (color-theme-sanityinc-solarized--theme-name mode))
         (doc (format "A version of Ethan Schoonover's 'Solarized' theme (%s version)" mode)))
     `(progn
        (deftheme ,name ,doc)
@@ -844,33 +845,15 @@ Argument MODE: 'light or 'dark"
          `(vc-annotate-background nil)
          `(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
          `(ansi-color-names-vector (vector ,normal ,red ,green ,yellow ,blue ,magenta ,cyan ,contrast-background))
-         '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
+         `(window-divider-mode nil)
+         ))
        (provide-theme ',name))))
 
 
-(defun color-theme-sanityinc-solarized (mode)
-  "Apply either the dark or the light theme."
-  (if (fboundp 'load-theme)
-      (let ((name (cond
-                    ((eq 'light mode) 'sanityinc-solarized-light)
-                    ((eq 'dark mode) 'sanityinc-solarized-dark)
-                    (t (error "invalid mode: %s" mode)))))
-        (if (boundp 'custom-enabled-themes)
-            (custom-set-variables `(custom-enabled-themes '(,name)))
-          (if (> emacs-major-version 23)
-              (load-theme name t)
-            (load-theme name))))
-    (progn
-      (require 'color-theme)
-      (color-theme-sanityinc-solarized--with-colors
-       mode
-       (color-theme-install
-        `(,(intern (concat "color-theme-sanityinc-solarized-" (symbol-name mode)))
-          ,@(color-theme-sanityinc-solarized--frame-parameter-specs)
-          ,@(color-theme-sanityinc-solarized--face-specs)))
-       ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector normal red green yellow blue magenta cyan contrast-background))
-       (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
+(defun color-theme-sanityinc-solarized (variant)
+  "Apply the given tomorrow theme VARIANT, e.g. `light' or `dark'."
+  (let ((name (color-theme-sanityinc-solarized--theme-name variant)))
+    (custom-set-variables `(custom-enabled-themes '(,name)))))
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
